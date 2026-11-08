@@ -36,4 +36,10 @@ You can install a Linux distribution in dual-boot mode with Windows or in a virt
 ## Bypass links
 If any autonomous portal has rendering issues, use the direct bypass links that appear in section 4 of the Markdown report.
 
+### Community of Madrid Cita Previa
+The Community of Madrid portal uses an `<iframe>` authorized by the SEPE `frame-ancestors` directive. If you experience rendering issues or blocks:
+1. Ensure you have an up-to-date browser (Chrome 108+, Firefox 122+, Edge 120+, Safari 15+).
+2. Use the direct bypass link: https://citaprevia-sede.sepe.gob.es/citapreviasepe/?origen=28
+3. If the iframe remains blocked, temporarily disable ad-blocking or script-blocking extensions.
+
 Good luck with your audit!

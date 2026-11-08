@@ -1,6 +1,6 @@
 # Informe de Auditoría: Estado de Cita Previa de Empleo (SEPE y CC. AA.)
 
-> **Auditoría generada automáticamente el:** 08/11/2026 a las 20:33:38 CEST
+> **Auditoría generada automáticamente el:** 08/11/2026 a las 20:34:55 CEST
 
 Este informe analiza el estado de las directivas de seguridad web del Servicio Público de Empleo Estatal (SEPE) y la compatibilidad con los portales autonómicos de cita previa de empleo.
 
@@ -42,7 +42,7 @@ frame-ancestors 'self' https://sede.sepe.gob.es https://inaem.aragon.es https://
 | **Cantabria** | [EMCAN](https://www.cantabria.es/empleo/cita-previa) | Desconocida | ⚪ N/A | ❌ ERROR DE ACCESO: HTTP Error 404: Not Found |
 | **Castilla-La Mancha** | [Emplea CLM](https://www.jccm.es/empleo/cita-previa) | Desconocida | ⚪ N/A | ❌ ERROR DE ACCESO: HTTP Error 404: Not Found |
 | **Castilla y León** | [ECyL](https://www.encyclyldeempleo.com/cita-previa) | Desconocida | ⚪ N/A | ❌ ERROR DE ACCESO: <urlopen error [Errno -2] Name or service not known> |
-| **Cataluña** | [SOC](https://soc.cat/ca/serveis/empleo/cita-previa) | Desconocida | ⚪ N/A | ❌ ERROR DE ACCESO: <urlopen error [Errno 104] Connection reset by peer> |
+| **Cataluña** | [SOC](https://soc.cat/ca/serveis/empleo/cita-previa) | Desconocida | ⚪ N/A | ❌ ERROR DE ACCESO: <urlopen error [Errno 111] Connection refused> |
 | **Galicia** | [Emprego Galicia](https://www.xunta.gal/empleo/cita-previa) | Desconocida | ⚪ N/A | ❌ ERROR DE ACCESO: HTTP Error 404: Not Found |
 | **La Rioja** | [Empleo La Rioja](https://www.larioja.org/empleo/cita-previa) | Desconocida | ⚪ N/A | ❌ ERROR DE ACCESO: HTTP Error 404: Not Found |
 | **Navarra** | [SNE-NL](https://www.navarra.es/empleo/cita-previa) | Desconocida | ⚪ N/A | ❌ ERROR DE ACCESO: HTTP Error 404: Not Found |
@@ -120,8 +120,8 @@ frame-ancestors 'self' https://sede.sepe.gob.es https://inaem.aragon.es https://
 #### Cataluña (SOC)
 - **URL auditada:** [https://soc.cat/ca/serveis/empleo/cita-previa](https://soc.cat/ca/serveis/empleo/cita-previa)
 - **Implementación:** Desconocida
-- **Diagnóstico:** ❌ ERROR DE ACCESO: <urlopen error [Errno 104] Connection reset by peer>
-- **Detalle técnico:** No se pudo conectar al portal autonómico: <urlopen error [Errno 104] Connection reset by peer>
+- **Diagnóstico:** ❌ ERROR DE ACCESO: <urlopen error [Errno 111] Connection refused>
+- **Detalle técnico:** No se pudo conectar al portal autonómico: <urlopen error [Errno 111] Connection refused>
 
 #### Galicia (Emprego Galicia)
 - **URL auditada:** [https://www.xunta.gal/empleo/cita-previa](https://www.xunta.gal/empleo/cita-previa)

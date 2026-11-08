@@ -36,4 +36,10 @@ Puedes instalar una distribución Linux en modo dual-boot con Windows o en una m
 ## Enlaces de contingencia
 Si algún marco autonómico tiene problemas de renderizado, usa los enlaces directos de bypass que aparecen en la sección 4 del informe Markdown.
 
+### Cita previa en la Comunidad de Madrid
+El portal de la Comunidad de Madrid utiliza un `<iframe>` autorizado por la directiva `frame-ancestors` del SEPE. Si experimentas problemas de renderizado o bloqueos, se recomienda:
+1. Asegurar tener un navegador actualizado (Chrome 108+, Firefox 122+, Edge 120+, Safari 15+).
+2. Usar el enlace directo de bypass: https://citaprevia-sede.sepe.gob.es/citapreviasepe/?origen=28
+3. Si el iframe sigue bloqueado, desactivar temporalmente extensiones de bloqueo de publicidad o scripts.
+
 ¡Éxito en tu auditoría!

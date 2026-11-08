@@ -12,6 +12,7 @@ Automated audit of the employment office appointment (cita previa) system (SEPE 
 - Supports all 17 Spanish Autonomous Communities.
 - Command-line options: --quiet, --browser-detect, --proxy, -o/--output.
 - Detects installed browsers and compares with minimum required versions.
+- **Managing cita previa in the Community of Madrid**: The script detects if the Madrid portal uses iframe authorized by CSP or direct link, and provides bypass links if necessary.
 
 ## Usage
 Run the script from the terminal:
@@ -30,8 +31,11 @@ If no output file is provided, it will generate `informe_estado_cita_previa.md` 
 ## Results Interpretation
 - The Markdown report includes the state of CSP headers, iframe or direct link implementation in each autonomous portal (all 17 CC.AA.), and technical diagnosis.
 - Console messages indicate the minimum recommended browser, overall status, and Windows 11 compatibility.
+- **For the Community of Madrid**: If the report indicates that the iframe is blocked by CSP, it is recommended to use the direct bypass links that appear in section 4 of the report, or access directly at https://citaprevia-sede.sepe.gob.es/citapreviasepe/?origen=28
 - If the hardware is not compatible with Windows 11, consider installing Linux in virtual machines (VirtualBox, VMware) or dual-boot to access the appointment pages.
 
 ## Useful Links
 - [SEPE](https://sede.sepe.gob.es)
 - Included autonomous portals in the audit.
+- **Community of Madrid**: https://www.comunidad.madrid/servicios/empleo/cita-previa-oficinas-empleo
+  - Direct bypass link: https://citaprevia-sede.sepe.gob.es/citapreviasepe/?origen=28
