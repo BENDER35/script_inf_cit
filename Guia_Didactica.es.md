@@ -7,12 +7,12 @@ Esta guía te ayudará a entender los resultados del informe generado y cómo so
 1. **Comprueba las cabeceras CSP**: Verifica si el dominio de tu comunidad autónoma está en la lista blanca del SEPE en la directiva `frame-ancestors`. Si está, el iframe cargará sin bloqueos.
 2. **Detecta el tipo de implementación**: Determina si el portal usa un iframe incrustado, un enlace directo (a pantalla completa) o un botón integrado.
 3. **Evalúa el navegador**: Recomienda versiones mínimas de navegadores modernos para un correcto funcionamiento.
-4. **Evalúa Windows 11**: Comprueba si tu hardware cumple los requisitos mínimos para Windows 11 y, de no ser así, sugiere alternativas con Linux.
+4. **Evalúa Windows 11**: Comprueba si tu hardware cumple los requisitos mínimos para Windows 11 (arquitectura 64-bit, 2+ núcleos, 4+ GB RAM, TPM 2.0, Secure Boot, partición GPT) y, de no ser así, sugiere alternativas con Linux.
 
 ## Cómo interpretar el informe Markdown
-- **Estado técnico**: Cada fila de la tabla indica si el portal está operativo, si hay errores de CSP o si usa iframes/botones.
+- **Estado técnico**: Cada fila de la tabla indica si el portal está operativo, si hay errores de CSP o si usa iframes/botones. Incluye ahora las 17 Comunidades Autónomas.
 - **Mensajes en consola**: El navegador mínimo recomendado, el estado general y la compatibilidad con Windows 11 te indican qué pasos seguir.
-- **Si aparece "No compatible con Windows 11"**: Tu hardware no cumple los requisitos mínimos (falta arquitectura de 64 bits, núcleos de CPU o memoria RAM). Considera instalar Linux.
+- **Si aparece "No compatible con Windows 11"**: Tu hardware no cumple los requisitos mínimos (falta arquitectura de 64 bits, núcleos de CPU, memoria RAM, TPM 2.0, Secure Boot o partición GPT). Considera instalar Linux.
 
 ## Instalación de Linux (si es necesario)
 Puedes instalar una distribución Linux en modo dual-boot con Windows o en una máquina virtual.
