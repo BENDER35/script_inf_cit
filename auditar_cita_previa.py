@@ -276,8 +276,164 @@ def detectar_navegadores_instalados():
     return navegadores
 
 
+def detectar_windows_10_esu():
+    """
+    Detecta si el equipo ejecuta Windows 10 y si tiene instaladas las ESU
+    (Extended Security Updates), también llamadas "modo prórroga".
+
+    La detección es de mejor esfuerzo y combina varias fuentes:
+      1. Versión/build de Windows (Windows 11 usa build >= 22000).
+      2. Registro de Windows (claves ESU).
+      3. Licencia ESU mediante slmgr.vbs.
+      4. Productos de licencia ESU vistos por PowerShell/CIM.
+
+    Devuelve un diccionario con el resultado. En sistemas que no son Windows
+    devuelve todos los indicadores a False.
+    """
+    resultado = {
+        "es_windows": False,
+        "es_windows_10": False,
+        "es_windows_11": False,
+        "windows_release": "",
+        "windows_version": "",
+        "windows_build": 0,
+        "esu_instalada": False,
+        "esu_detectada_por": "",
+    }
+
+    if platform.system() != "Windows":
+        return resultado
+
+    resultado["es_windows"] = True
+
+    # 1. Versión y build de Windows
+    try:
+        resultado["windows_release"] = platform.release()
+        resultado["windows_version"] = platform.version()
+        partes = resultado["windows_version"].split(".")
+        if len(partes) >= 3:
+            resultado["windows_build"] = int(partes[2])
+        elif partes and partes[-1].isdigit():
+            resultado["windows_build"] = int(partes[-1])
+    except Exception:
+        pass
+
+    build = resultado["windows_build"]
+    if build >= 22000:
+        resultado["es_windows_11"] = True
+    elif build > 0 or resultado["windows_release"] == "10":
+        resultado["es_windows_10"] = True
+
+    if not resultado["es_windows_10"]:
+        return resultado
+
+    # 2. Registro de Windows: claves donde Windows 10 ESU deja constancia
+    try:
+        import winreg  # Solo disponible en Windows
+
+        rutas_esu = [
+            r"SOFTWARE\Microsoft\Windows\CurrentVersion\ESU",
+            r"SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\ESU",
+            r"SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform\ESU",
+        ]
+        valores_relevantes = (
+            "EsuKeyId",
+            "EsuKeyType",
+            "EsuEligibility",
+            "EsuExpirationDate",
+            "EsuActivationState",
+            "EsuLicenseType",
+        )
+
+        for ruta in rutas_esu:
+            try:
+                with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, ruta) as clave:
+                    valores = {}
+                    i = 0
+                    while True:
+                        try:
+                            nombre, valor, _tipo = winreg.EnumValue(clave, i)
+                            valores[nombre] = valor
+                            i += 1
+                        except OSError:
+                            break
+
+                    if valores and (
+                        any(n in valores for n in valores_relevantes)
+                        or "esu" in ruta.lower()
+                    ):
+                        # Si existe la clave con datos, se considera ESU instalada.
+                        # EsuActivationState=0 puede indicar no activada; en ese caso
+                        # se exige que haya key id/expiration date.
+                        estado = str(valores.get("EsuActivationState", "")).strip()
+                        if estado in ("0", "False", "false") and not (
+                            valores.get("EsuKeyId") or valores.get("EsuExpirationDate")
+                        ):
+                            continue
+                        resultado["esu_instalada"] = True
+                        resultado["esu_detectada_por"] = f"Registro de Windows ({ruta})"
+                        break
+            except FileNotFoundError:
+                continue
+            except OSError:
+                continue
+    except Exception:
+        pass
+
+    # 3. Licencia ESU mediante slmgr.vbs
+    if not resultado["esu_instalada"]:
+        try:
+            ruta_slmgr = os.path.join(
+                os.environ.get("SystemRoot", r"C:\Windows"),
+                "System32",
+                "slmgr.vbs",
+            )
+            salida = subprocess.run(
+                ["cscript", "//nologo", ruta_slmgr, "/dlv"],
+                capture_output=True,
+                text=True,
+                timeout=20,
+            )
+            texto = (salida.stdout or "") + (salida.stderr or "")
+            texto_lower = texto.lower()
+            if "esu" in texto_lower or "extended security update" in texto_lower:
+                resultado["esu_instalada"] = True
+                resultado["esu_detectada_por"] = "slmgr.vbs /dlv"
+        except Exception:
+            pass
+
+    # 4. Productos de licencia ESU vistos por PowerShell/CIM
+    if not resultado["esu_instalada"]:
+        try:
+            comando = (
+                "Get-CimInstance -ClassName SoftwareLicensingProduct "
+                "-Filter \"Name like '%ESU%'\" | "
+                "ForEach-Object { $_.Name + '|' + $_.LicenseStatus }"
+            )
+            salida = subprocess.run(
+                ["powershell", "-NoProfile", "-NonInteractive", "-Command", comando],
+                capture_output=True,
+                text=True,
+                timeout=25,
+            )
+            texto = (salida.stdout or "") + (salida.stderr or "")
+            for linea in texto.splitlines():
+                linea = linea.strip()
+                if not linea:
+                    continue
+                # LicenseStatus 1 = con licencia; 2 = periodo de gracia; 5 = notificación
+                if "|" in linea and linea.rsplit("|", 1)[-1] in ("1", "2", "5"):
+                    resultado["esu_instalada"] = True
+                    resultado["esu_detectada_por"] = "PowerShell/CIM (SoftwareLicensingProduct)"
+                    break
+        except Exception:
+            pass
+
+    return resultado
+
+
 def obtener_info_sistema_completo():
-    """Obtiene información detallada del sistema para evaluación Windows 11."""
+    """Obtiene información detallada del sistema para evaluación Windows 11 y ESU."""
     info = {
         "arquitectura": platform.machine().lower(),
         "sistema_operativo": platform.system(),
@@ -285,8 +441,17 @@ def obtener_info_sistema_completo():
         "memoria_gb": 0,
         "tpm_2_0": "Desconocido",
         "secure_boot": "Desconocido",
-        "particion_gpt": False
+        "particion_gpt": False,
+        "windows_release": "",
+        "windows_build": 0,
+        "es_windows_10": False,
+        "es_windows_11": False,
+        "esu_instalada": False,
+        "esu_detectada_por": "",
     }
+
+    # Detección de Windows 10 / Windows 11 y de las ESU ("modo prórroga")
+    info.update(detectar_windows_10_esu())
     
     # Núcleos de CPU
     try:
@@ -340,6 +505,108 @@ def obtener_info_sistema_completo():
     return info
 
 
+def generar_mensaje_soporte_sistema(info_sistema):
+    """
+    Genera el mensaje de soporte del sistema operativo, con especial atención a
+    Windows 10 con ESU ("modo prórroga") y a las consecuencias de su caducidad.
+    """
+    sistema = info_sistema.get("sistema_operativo", "")
+    es_w10 = info_sistema.get("es_windows_10", False)
+    es_w11 = info_sistema.get("es_windows_11", False)
+    esu = info_sistema.get("esu_instalada", False)
+    detectada_por = info_sistema.get("esu_detectada_por", "")
+    build = info_sistema.get("windows_build", 0)
+
+    if es_w10 and esu:
+        detalle_deteccion = f" (detectadas mediante {detectada_por})" if detectada_por else ""
+        return (
+            "==============================================================================\n"
+            "SOPORTE DEL SISTEMA OPERATIVO: WINDOWS 10 CON ESU (\"MODO PRÓRROGA\")\n"
+            "==============================================================================\n"
+            f"✅ Windows 10 build {build} con ESU instaladas{detalle_deteccion}.\n"
+            "   Este sistema TODAVÍA TIENE SOPORTE y, por tanto, también tienes disponible\n"
+            "   el servicio de cita previa de las oficinas de empleo de forma GRATUITA en\n"
+            "   aquellas Comunidades Autónomas de España que indican el número 012 como\n"
+            "   teléfono para solicitar la cita previa y en las que el demandante de empleo\n"
+            "   disfruta de los servicios de las oficinas de empleo.\n"
+            "\n"
+            "ℹ️  BASE NORMATIVA (BOE núm. 296, de 10 de diciembre de 2012):\n"
+            "   Todas las operadoras de telefonía españolas están obligadas a cobrar el\n"
+            "   número 012, bien por minutos (el tiempo que dure la gestión presencial o\n"
+            "   semipresencial), bien por cada acceso a las oficinas de empleo (cada vez\n"
+            "   que se necesite acudir a ellas). Si el demandante de empleo no dispone de\n"
+            "   medios electrónicos o no tiene formación suficiente para usar la cita\n"
+            "   previa permanente, necesitará llamar a atención al ciudadano para que le\n"
+            "   generen una reserva de hueco, que deberá presentar en la oficina de empleo.\n"
+            "   En ese caso, el cobro se produce por cada vez que se acceda a las oficinas\n"
+            "   de empleo.\n"
+            "\n"
+            "⚠️  IMPORTANTE: WINDOWS 10 CON LICENCIA ESU NO ES PARA SIEMPRE.\n"
+            "   • Caduca en octubre de 2028.\n"
+            "   • Microsoft ha comunicado que Microsoft Edge finaliza su soporte el mismo\n"
+            "     día en que termina el soporte de Windows 10 ESU.\n"
+            "   • Cuando finalice el soporte, con el paso del tiempo los navegadores pueden\n"
+            "     experimentar problemas de usabilidad en la página, fallos en ciertos\n"
+            "     elementos, que la parte de OpenStreetMap no funcione, errores de\n"
+            "     certificados raíz, errores de incompatibilidad con la página, que no se\n"
+            "     envíe correctamente el SMS de confirmación o cualquier otro error que\n"
+            "     impida manejar la página.\n"
+            "\n"
+            "⚠️  SI LA PÁGINA FALLA Y HABLARLO CON LA OFICINA DE EMPLEO NO SURTE EFECTO:\n"
+            "   el demandante de empleo habrá perdido el derecho a solicitar cita previa\n"
+            "   para acceder a la oficina de empleo de forma gratuita en aquellas oficinas\n"
+            "   que usen el 012 y gestionen la cita previa y la atención por aforo.\n"
+            "\n"
+            "⚠️  LAS SOLUCIONES QUE PUEDEN ENCONTRARSE POR INTERNET NO SON OFICIALES DE\n"
+            "   MICROSOFT (por ejemplo, Legacy Update o Extended Kernel). Están hechas por\n"
+            "   la comunidad de usuarios y es posible que funcionen a medias o que no\n"
+            "   funcionen, especialmente el kernel extendido.\n"
+            "\n"
+            "✅ RECOMENDACIÓN: si se produce alguno de estos supuestos, instala Linux (en\n"
+            "   arranque dual o en una máquina virtual si en algún momento necesitas\n"
+            "   Windows) para poder recuperar el acceso gratuito a las oficinas de empleo\n"
+            "   cuando el 012 sea un número de pago.\n"
+            "=============================================================================="
+        )
+
+    if es_w10 and not esu:
+        return (
+            "==============================================================================\n"
+            "SOPORTE DEL SISTEMA OPERATIVO: WINDOWS 10 SIN ESU\n"
+            "==============================================================================\n"
+            f"❌ Windows 10 build {build} detectado, pero NO se han encontrado las ESU\n"
+            "   (Extended Security Updates / \"modo prórroga\").\n"
+            "   Windows 10 ha finalizado su soporte estándar. Sin ESU, los navegadores y\n"
+            "   la página de cita previa pueden dejar de funcionar correctamente en\n"
+            "   cualquier momento (fallos de usabilidad, elementos rotos, OpenStreetMap,\n"
+            "   certificados raíz, incompatibilidades, SMS de confirmación, etc.).\n"
+            "\n"
+            "✅ RECOMENDACIÓN: instala Linux (arranque dual o máquina virtual) para poder\n"
+            "   seguir accediendo de forma gratuita a las oficinas de empleo cuando el 012\n"
+            "   sea un número de pago. Las soluciones no oficiales de Internet (Legacy\n"
+            "   Update, Extended Kernel) pueden funcionar a medias o no funcionar.\n"
+            "=============================================================================="
+        )
+
+    if es_w11:
+        return (
+            "==============================================================================\n"
+            "SOPORTE DEL SISTEMA OPERATIVO: WINDOWS 11\n"
+            "==============================================================================\n"
+            f"✅ Windows 11 detectado (build {build}). El sistema tiene soporte vigente y\n"
+            "   no necesita ESU. Mantén el navegador actualizado para usar la cita previa.\n"
+            "=============================================================================="
+        )
+
+    if sistema == "Linux":
+        return (
+            "ℹ️  Sistema operativo Linux detectado: la comprobación de ESU de Windows 10\n"
+            "   no aplica. El soporte depende de la distribución y de su ciclo de vida."
+        )
+
+    return ""
+
+
 def verificar_requisitos_windows_11(info_sistema, navegadores_instalados=None):
     """
     Verifica si el hardware cumple requisitos de Windows 11.
@@ -378,7 +645,13 @@ def verificar_requisitos_windows_11(info_sistema, navegadores_instalados=None):
         mensaje += ". Se recomienda actualizar a Windows 11 para usar la versión más alta del navegador."
     else:
         mensaje = f"❌ El hardware no cumple los requisitos de Windows 11. Faltan: {', '.join(faltantes)}"
-    
+
+    # Integrar el estado de soporte del sistema operativo (Windows 10 ESU, etc.)
+    soporte = generar_mensaje_soporte_sistema(info_sistema)
+    if soporte:
+        mensaje += "\n\n" + soporte
+        requisitos_minimos["soporte_sistema"] = soporte
+
     return todos_cumplen, mensaje, requisitos_minimos
 
 
@@ -542,7 +815,7 @@ def auditar_portal_autonomico(portal, whitelist_sepe, modo="normal"):
     return resultado
 
 
-def generar_reporte_markdown(datos_sepe, resultados_autonomicos, ruta_salida, modo="completo"):
+def generar_reporte_markdown(datos_sepe, resultados_autonomicos, ruta_salida, modo="completo", info_sistema=None):
     """Genera un archivo Markdown completo y estructurado con los resultados."""
     ahora_str = datetime.now().strftime("%d/%m/%Y a las %H:%M:%S CEST")
     
@@ -620,7 +893,19 @@ def generar_reporte_markdown(datos_sepe, resultados_autonomicos, ruta_salida, mo
     md.append("* [Cita Previa Canarias - SCE (origen=SCE)](https://citaprevia-sede.sepe.gob.es/citapreviasepe/?origen=SCE)")
     md.append("* [Cita Previa Baleares - SOIB (origen=SOIB)](https://citaprevia-sede.sepe.gob.es/citapreviasepe/?origen=SOIB&codidioma=ca)")
     md.append("* [Sede Electrónica General del SEPE](https://sede.sepe.gob.es/portalSede/procedimientos-y-servicios/personas/proteccion-por-desempleo/cita-previa.html)\n")
-    
+
+    # Sección 5: Soporte del sistema operativo (Windows 10 ESU)
+    if info_sistema:
+        md.append("---\n")
+        md.append("## 5. Soporte del Sistema Operativo y ESU (Windows 10)\n")
+        soporte = generar_mensaje_soporte_sistema(info_sistema)
+        if soporte:
+            md.append("```text")
+            md.append(soporte)
+            md.append("```\n")
+        else:
+            md.append("No se pudo determinar el estado de soporte del sistema operativo.\n")
+
     contenido_final = "\n".join(md)
     
     os.makedirs(os.path.dirname(os.path.abspath(ruta_salida)), exist_ok=True)
@@ -660,6 +945,8 @@ Auditoría automatizada del sistema de cita previa de oficinas de empleo (SEPE y
 - Soporta las 17 Comunidades Autónomas españolas.
 - Modo silencioso (-q) para ejecución en CI/CD y automatización.
 - Detecta navegadores instalados en el sistema y compara con versiones mínimas requeridas.
+- **Detecta Windows 10 con ESU ("modo prórroga")** y avisa de su fecha de caducidad (octubre de 2028), de la finalización de Microsoft Edge el mismo día y de los fallos que pueden aparecer después (OpenStreetMap, certificados raíz, incompatibilidades, SMS de confirmación, etc.).
+- **Cita previa en la Comunidad de Madrid**: el script detecta si el portal madrileño usa un iframe autorizado por CSP o un enlace directo, y ofrece enlaces de bypass si fuera necesario.
 
 ## Uso
 Ejecuta el script desde la terminal:
@@ -676,12 +963,34 @@ Si no se proporciona un archivo de salida, generará `informe_estado_cita_previa
 
 ## Interpretación de resultados
 - El informe Markdown incluye el estado de las cabeceras CSP, la implementación de iframes o enlaces directos en cada portal autonómico (las 17 CC.AA.), y un diagnóstico técnico.
-- Los mensajes en consola indican el navegador mínimo recomendado, el estado general y la compatibilidad con Windows 11.
+- Los mensajes en consola indican el navegador mínimo recomendado, el estado general, la compatibilidad con Windows 11 y el estado de soporte de Windows 10 con ESU.
 - Si el hardware no es compatible con Windows 11, considera instalar Linux en máquinas virtuales (VirtualBox, VMware) o en modo dual-boot para acceder a las páginas de cita previa.
+
+## Windows 10 con ESU ("modo prórroga")
+
+Si el script detecta Windows 10 con las ESU (Extended Security Updates) instaladas, informa de que el sistema **todavía tiene soporte** y de que el servicio de cita previa de las oficinas de empleo sigue siendo **gratuito** en las Comunidades Autónomas que indican el número **012** para solicitar cita previa y en las que el demandante de empleo disfruta de los servicios de las oficinas de empleo.
+
+Según el **BOE núm. 296, de 10 de diciembre de 2012**, todas las operadoras de telefonía españolas están obligadas a cobrar el número 012, bien **por minutos** (el tiempo que dure la gestión presencial o semipresencial), bien **por cada acceso** a las oficinas de empleo (cada vez que se necesite acudir a ellas). Si el demandante de empleo no dispone de medios electrónicos o no tiene formación suficiente para usar la cita previa permanente, necesitará llamar a atención al ciudadano para que le generen una reserva de hueco, que deberá presentar en la oficina de empleo; en ese caso el cobro se produce por cada acceso a las oficinas.
+
+**Aviso importante:** Windows 10 con licencia ESU **no es para siempre**. Caduca en **octubre de 2028**, el mismo día en que Microsoft finaliza el soporte de Microsoft Edge. A partir de entonces, con el paso del tiempo los navegadores pueden mostrar problemas de usabilidad, fallos en ciertos elementos de la página, que la parte de OpenStreetMap no funcione, errores de certificados raíz, errores de incompatibilidad con la página, que no se envíe correctamente el SMS de confirmación o cualquier otro error que impida manejar la página.
+
+Si la página falla y hablar con la oficina de empleo no surte efecto, el demandante de empleo puede perder el derecho a solicitar cita previa gratuita en las oficinas que usen el 012 y gestionen la cita previa y la atención por aforo. Las soluciones que se encuentran por Internet (Legacy Update, Extended Kernel) **no son oficiales de Microsoft**, están hechas por la comunidad y pueden funcionar a medias o no funcionar, especialmente el kernel extendido. En esos casos se recomienda instalar **Linux** (en arranque dual o en una máquina virtual si en algún momento se necesita Windows) para recuperar el acceso gratuito a las oficinas de empleo cuando el 012 sea un número de pago.
+
+## Cita previa en la Comunidad de Madrid
+
+El portal de la Comunidad de Madrid utiliza un `<iframe>` autorizado por la directiva `frame-ancestors` del SEPE. Si el informe indica que el iframe está bloqueado por CSP o aparecen problemas de renderizado:
+
+1. Asegúrate de tener un navegador actualizado (Chrome 108+, Firefox 122+, Edge 120+, Safari 15+).
+2. Usa el enlace directo de bypass: https://citaprevia-sede.sepe.gob.es/citapreviasepe/?origen=28
+3. Si el iframe sigue bloqueado, desactiva temporalmente extensiones de bloqueo de publicidad o scripts.
+
+Consulta el archivo `INFO_OF_EMP_ESP_2026.txt` para más información sobre las oficinas de empleo en España.
 
 ## Enlaces útiles
 - [SEPE](https://sede.sepe.gob.es)
 - Portales autonómicos incluidos en la auditoría.
+- **Comunidad de Madrid**: https://www.comunidad.madrid/servicios/empleo/cita-previa-oficinas-empleo
+  - Enlace directo de bypass: https://citaprevia-sede.sepe.gob.es/citapreviasepe/?origen=28
 """
         
         readme_path = os.path.join(directorio_script, f"README.{lang}.md")
@@ -703,6 +1012,28 @@ Automated audit of the employment office appointment (cita previa) system (SEPE 
 - Supports all 17 Spanish Autonomous Communities.
 - Command-line options: --quiet, --browser-detect, --proxy, -o/--output.
 - Detects installed browsers and compares with minimum required versions.
+- **Detects Windows 10 with ESU ("modo prórroga")** and warns about its expiration date (October 2028), Microsoft Edge ending support the same day, and the failures that may appear afterwards (OpenStreetMap, root certificates, incompatibilities, confirmation SMS, etc.).
+- **Cita previa in the Community of Madrid**: the script detects whether the Madrid portal uses a CSP-authorized iframe or a direct link, and offers bypass links if needed.
+
+## Windows 10 with ESU ("modo prórroga")
+
+If the script detects Windows 10 with ESU (Extended Security Updates) installed, it reports that the system **is still supported** and that the employment office appointment service remains **free** in the Autonomous Communities that list the **012** number for requesting an appointment and where the job seeker uses the employment office services.
+
+Under **BOE no. 296 of 10 December 2012**, all Spanish telecommunications operators must charge for the 012 number either **per minute** (the duration of the in-person or semi-presential procedure) or **per access** to the employment offices (each time the job seeker needs to visit them). If the job seeker has no electronic means or insufficient training to use the permanent appointment system, they will need to call citizen attention to generate a slot reservation, which they must present at the employment office; in that case, the charge applies for each access to the offices.
+
+**Important notice:** Windows 10 with an ESU license **is not permanent**. It expires in **October 2028**, the same day Microsoft ends support for Microsoft Edge. After that, over time browsers may experience usability problems, broken page elements, OpenStreetMap failing, root certificate errors, page incompatibility errors, confirmation SMS failures, or any other error that prevents using the page.
+
+If the page fails and talking to the employment office does not help, the job seeker may lose the right to request a free appointment at offices that use the 012 number and manage appointments and attendance by capacity (aforo). Internet fixes such as Legacy Update or Extended Kernel **are not official Microsoft solutions**, are community-made, and may work only partially or not at all, especially the extended kernel. In those cases, installing **Linux** (dual boot or a virtual machine if Windows is still needed) is recommended to recover free access to employment offices when 012 is a paid number.
+
+## Cita previa in the Community of Madrid
+
+The Community of Madrid portal uses an `<iframe>` authorized by the SEPE `frame-ancestors` directive. If the report indicates that the iframe is blocked by CSP or rendering problems appear:
+
+1. Make sure you have an up-to-date browser (Chrome 108+, Firefox 122+, Edge 120+, Safari 15+).
+2. Use the direct bypass link: https://citaprevia-sede.sepe.gob.es/citapreviasepe/?origen=28
+3. If the iframe remains blocked, temporarily disable ad-blocking or script-blocking extensions.
+
+See `INFO_OF_EMP_ESP_2026.txt` for more information about employment offices in Spain.
 
 ## Usage
 Run the script from the terminal:
@@ -720,12 +1051,14 @@ If no output file is provided, it will generate `informe_estado_cita_previa.md` 
 
 ## Results Interpretation
 - The Markdown report includes the state of CSP headers, iframe or direct link implementation in each autonomous portal (all 17 CC.AA.), and technical diagnosis.
-- Console messages indicate the minimum recommended browser, overall status, and Windows 11 compatibility.
+- Console messages indicate the minimum recommended browser, overall status, Windows 11 compatibility, and Windows 10 ESU support status.
 - If the hardware is not compatible with Windows 11, consider installing Linux in virtual machines (VirtualBox, VMware) or dual-boot to access the appointment pages.
 
 ## Useful Links
 - [SEPE](https://sede.sepe.gob.es)
 - Included autonomous portals in the audit.
+- **Community of Madrid**: https://www.comunidad.madrid/servicios/empleo/cita-previa-oficinas-empleo
+  - Direct bypass link: https://citaprevia-sede.sepe.gob.es/citapreviasepe/?origen=28
 """
         
         readme_path = os.path.join(directorio_script, f"README.{lang}.md")
@@ -743,7 +1076,15 @@ Esta guía te ayudará a entender los resultados del informe generado y cómo so
 1. **Comprueba las cabeceras CSP**: Verifica si el dominio de tu comunidad autónoma está en la lista blanca del SEPE en la directiva `frame-ancestors`. Si está, el iframe cargará sin bloqueos.
 2. **Detecta el tipo de implementación**: Determina si el portal usa un iframe incrustado, un enlace directo (a pantalla completa) o un botón integrado.
 3. **Evalúa el navegador**: Recomienda versiones mínimas de navegadores modernos para un correcto funcionamiento.
-4. **Evalúa Windows 11**: Comprueba si tu hardware cumple los requisitos mínimos para Windows 11 (arquitectura 64-bit, 2+ núcleos, 4+ GB RAM, TPM 2.0, Secure Boot, partición GPT) y, de no ser así, sugiere alternativas con Linux.
+4. **Evalúa Windows 11 y Windows 10 ESU**: Comprueba si tu hardware cumple los requisitos mínimos para Windows 11 (arquitectura 64-bit, 2+ núcleos, 4+ GB RAM, TPM 2.0, Secure Boot, partición GPT) y, de no ser así, sugiere alternativas con Linux. También detecta Windows 10 con ESU ("modo prórroga") y avisa de su caducidad y de los fallos que pueden aparecer después.
+
+## Windows 10 con ESU ("modo prórroga")
+
+Si el auditor detecta Windows 10 con las ESU instaladas, te informará de que el sistema **todavía tiene soporte** y de que la cita previa de las oficinas de empleo sigue siendo **gratuita** en las Comunidades Autónomas que usan el número **012** y en las que el demandante de empleo disfruta de los servicios de las oficinas de empleo.
+
+Según el **BOE núm. 296, de 10 de diciembre de 2012**, las operadoras de telefonía españolas están obligadas a cobrar el 012 **por minutos** (tiempo de la gestión presencial o semipresencial) o **por cada acceso** a las oficinas de empleo. Si no tienes medios electrónicos o formación suficiente para usar la cita previa permanente, tendrás que llamar a atención al ciudadano para que te generen una reserva de hueco y presentarla en la oficina; el cobro se produce por cada acceso a las oficinas.
+
+**Windows 10 con ESU no es para siempre:** caduca en **octubre de 2028**, el mismo día en que Microsoft finaliza el soporte de Microsoft Edge. Después pueden aparecer problemas de usabilidad, elementos rotos, fallos de OpenStreetMap, errores de certificados raíz, incompatibilidades, fallos del SMS de confirmación o cualquier otro error que impida usar la página. Si la página falla y la oficina de empleo no puede ayudarte, puedes perder el derecho a la cita previa gratuita en las oficinas que usen el 012 y atiendan por aforo. Las soluciones de Internet (Legacy Update, Extended Kernel) no son oficiales de Microsoft y pueden funcionar a medias o no funcionar, sobre todo el kernel extendido. En ese caso, instala **Linux** (arranque dual o máquina virtual si necesitas Windows) para recuperar el acceso gratuito a las oficinas de empleo cuando el 012 sea un número de pago.
 
 ## Cómo interpretar el informe Markdown
 - **Estado técnico**: Cada fila de la tabla indica si el portal está operativo, si hay errores de CSP o si usa iframes/botones. Incluye ahora las 17 Comunidades Autónomas.
@@ -772,6 +1113,14 @@ Puedes instalar una distribución Linux en modo dual-boot con Windows o en una m
 ## Enlaces de contingencia
 Si algún marco autonómico tiene problemas de renderizado, usa los enlaces directos de bypass que aparecen en la sección 4 del informe Markdown.
 
+### Cita previa en la Comunidad de Madrid
+El portal de la Comunidad de Madrid utiliza un `<iframe>` autorizado por la directiva `frame-ancestors` del SEPE. Si experimentas problemas de renderizado o bloqueos:
+1. Asegúrate de tener un navegador actualizado (Chrome 108+, Firefox 122+, Edge 120+, Safari 15+).
+2. Usa el enlace directo de bypass: https://citaprevia-sede.sepe.gob.es/citapreviasepe/?origen=28
+3. Si el iframe sigue bloqueado, desactiva temporalmente extensiones de bloqueo de publicidad o scripts.
+
+Consulta `INFO_OF_EMP_ESP_2026.txt` para más información sobre las oficinas de empleo en España.
+
 ¡Éxito en tu auditoría!
 """
     else:
@@ -784,7 +1133,15 @@ This guide will help you understand the results generated by the audit and how t
 1. **Checks CSP headers**: Verifies if your autonomous community's domain is on the SEPE whitelist in the `frame-ancestors` directive. If it is, the iframe will load without blocks.
 2. **Detects implementation type**: Determines if the portal uses an embedded iframe, a direct link (full screen) or an integrated button.
 3. **Evaluates the browser**: Recommends minimum modern browser versions for proper functioning.
-4. **Evaluates Windows 11**: Checks if your hardware meets the minimum requirements for Windows 11 (64-bit architecture, 2+ CPU cores, 4+ GB RAM, TPM 2.0, Secure Boot, GPT partition) and if not, suggests Linux alternatives.
+4. **Evaluates Windows 11 and Windows 10 ESU**: Checks if your hardware meets the minimum requirements for Windows 11 (64-bit architecture, 2+ CPU cores, 4+ GB RAM, TPM 2.0, Secure Boot, GPT partition) and if not, suggests Linux alternatives. It also detects Windows 10 with ESU ("modo prórroga") and warns about its expiration and the failures that may appear afterwards.
+
+## Windows 10 with ESU ("modo prórroga")
+
+If the auditor detects Windows 10 with ESU installed, it will tell you that the system **is still supported** and that the employment office appointment service remains **free** in the Autonomous Communities that use the **012** number and where the job seeker uses the employment office services.
+
+Under **BOE no. 296 of 10 December 2012**, Spanish telecommunications operators must charge for the 012 number **per minute** (duration of the in-person or semi-presential procedure) or **per access** to the employment offices. If you have no electronic means or insufficient training to use the permanent appointment system, you will need to call citizen attention to generate a slot reservation and present it at the office; the charge applies for each access to the offices.
+
+**Windows 10 with ESU is not permanent:** it expires in **October 2028**, the same day Microsoft ends support for Microsoft Edge. After that, usability problems, broken elements, OpenStreetMap failures, root certificate errors, incompatibilities, confirmation SMS failures, or any other error preventing use of the page may appear. If the page fails and the employment office cannot help, you may lose the right to a free appointment at offices that use the 012 number and manage attendance by capacity (aforo). Internet fixes (Legacy Update, Extended Kernel) are not official Microsoft solutions and may work only partially or not at all, especially the extended kernel. In that case, install **Linux** (dual boot or a virtual machine if you need Windows) to recover free access to employment offices when 012 is a paid number.
 
 ## How to interpret the Markdown report
 - **Technical status**: Each row in the table indicates whether the portal is operational, if there are CSP errors, or if it uses iframes/buttons. Now includes all 17 Spanish Autonomous Communities.
@@ -813,6 +1170,14 @@ You can install a Linux distribution in dual-boot mode with Windows or in a virt
 ## Bypass links
 If any autonomous portal has rendering issues, use the direct bypass links that appear in section 4 of the Markdown report.
 
+### Community of Madrid Cita Previa
+The Community of Madrid portal uses an `<iframe>` authorized by the SEPE `frame-ancestors` directive. If you experience rendering issues or blocks:
+1. Ensure you have an up-to-date browser (Chrome 108+, Firefox 122+, Edge 120+, Safari 15+).
+2. Use the direct bypass link: https://citaprevia-sede.sepe.gob.es/citapreviasepe/?origen=28
+3. If the iframe remains blocked, temporarily disable ad-blocking or script-blocking extensions.
+
+See `INFO_OF_EMP_ESP_2026.txt` for more information about employment offices in Spain.
+
 Good luck with your audit!
 """
     
@@ -830,7 +1195,7 @@ def main():
     
     # Modo versión
     if args["version"]:
-        print("Auditoría Cita Previa v2.0 - Análisis de Seguridad CSP y Compatibilidad Windows 11")
+        print("Auditoría Cita Previa v2.1 - Análisis de Seguridad CSP, Compatibilidad Windows 11 y ESU de Windows 10")
         sys.exit(0)
     
     directorio_script = os.path.dirname(os.path.abspath(__file__))
@@ -881,8 +1246,9 @@ def main():
     # 3. Generar informe Markdown
     if not args["quiet"]:
         print(f"\n -> Generando informe Markdown en: {ruta_md}")
-    
-    reporte = generar_reporte_markdown(datos_sepe, resultados, ruta_md)
+
+    info_sis = obtener_info_sistema_completo()
+    reporte = generar_reporte_markdown(datos_sepe, resultados, ruta_md, info_sistema=info_sis)
     if not args["quiet"]:
         print(f"[{datetime.now().strftime('%H:%M:%S')}] Informe Markdown generado correctamente ({len(reporte)} chars).")
     
@@ -896,11 +1262,10 @@ def main():
             estado_pantalla = "✅ Todos los portales auditados están operativos sin errores detectados."
         print(f" {estado_pantalla}\n")
     
-    # 5. Compatibilidad con Windows 11
+    # 5. Compatibilidad con Windows 11 y soporte ESU de Windows 10
     if not args["quiet"]:
-        print(" -> Verificando compatibilidad con Windows 11...")
-    
-    info_sis = obtener_info_sistema_completo()
+        print(" -> Verificando compatibilidad con Windows 11 y soporte de Windows 10 ESU...")
+
     compatible, mensaje_w11, detalles_req = verificar_requisitos_windows_11(info_sis, navegadores_instalados)
     if not args["quiet"]:
         print(f" {mensaje_w11}\n")
@@ -925,6 +1290,13 @@ def main():
         print(f"Enlaces directos: {sum(1 for r in resultados if r['usa_enlace_directo'])}")
         print(f"Errores: {sum(1 for r in resultados if 'ERROR' in r['estado_diagnostico'] or '❌' in r['estado_diagnostico'])}")
         print(f"Compatible Windows 11: {compatible}")
+        if info_sis.get("es_windows_10"):
+            estado_esu = "ESU instaladas (soporte hasta octubre de 2028)" if info_sis.get("esu_instalada") else "SIN ESU (soporte finalizado)"
+            print(f"Windows 10 detectado: {estado_esu}")
+        elif info_sis.get("es_windows_11"):
+            print("Windows 11 detectado: soporte vigente")
+        else:
+            print(f"Sistema operativo: {info_sis.get('sistema_operativo')}")
         if navegadores_instalados:
             print(f"Navegadores detectados: {list(navegadores_instalados.keys())}")
 

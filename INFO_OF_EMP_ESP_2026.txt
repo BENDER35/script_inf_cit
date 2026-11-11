@@ -1,0 +1,1141 @@
+================================================================================
+GUÍA INTEGRAL DE LAS OFICINAS DE EMPLEO EN ESPAÑA (EDICIÓN 2026)
+SISTEMA NACIONAL DE EMPLEO: ESTRUCTURA, SERVICIOS AUTONÓMICOS, TRÁMITES Y PRESTACIONES
+================================================================================
+Fecha de consolidación de información: 2026
+Ámbito territorial: España (17 Comunidades Autónomas y 2 Ciudades Autónomas)
+Marco normativo: Ley 3/2023, de 28 de febrero, de Empleo y Sistema Integrado de Servicios Públicos de Empleo (SISPE)
+
+================================================================================
+ÍNDICE GENERAL
+================================================================================
+1. ARQUITECTURA DEL SISTEMA PÚBLICO DE EMPLEO EN ESPAÑA
+   1.1. Diferencia fundamental: SEPE estatal vs. Servicios Públicos Autonómicos
+   1.2. El modelo de oficina mixta (doble ventanilla de atención)
+   1.3. La base de datos centralizada: SISPE (Sistema de Información de los Servicios Públicos de Empleo)
+   1.4. Derechos y deberes del usuario del servicio público de empleo
+
+2. DIRECTORIO COMPLETO DE SERVICIOS PÚBLICOS DE EMPLEO POR COMUNIDAD AUTÓNOMA
+   2.1. Andalucía - Servicio Andaluz de Empleo (SAE)
+   2.2. Aragón - Instituto Aragonés de Empleo (INAEM)
+   2.3. Asturias - Servicio Público de Empleo del Principado de Asturias (Trabajastur - SEPEPA)
+   2.4. Cantabria - Servicio Cántabro de Empleo (EMCAN)
+   2.5. Castilla-La Mancha - Servicio Público de Empleo de Castilla-La Mancha (Empleo CLM)
+   2.6. Castilla y León - Servicio Público de Empleo de Castilla y León (ECyL)
+   2.7. Cataluña - Servei Públic d'Ocupació de Catalunya (SOC)
+   2.8. Comunidad de Madrid - Dirección General del Servicio Público de Empleo de la Comunidad de Madrid
+   2.9. Comunidad Valenciana - LABORA (Servei Valencià d'Ocupació i Formació)
+   2.10. Extremadura - Servicio Extremeño Público de Empleo (SEXPE)
+   2.11. Galicia - Servizo Público de Emprego de Galicia (Emprego Galicia)
+   2.12. Islas Baleares - Servei d'Ocupació de les Illes Balears (SOIB)
+   2.13. Islas Canarias - Servicio Canario de Empleo (SCE)
+   2.14. La Rioja - Servicio Riojano de Empleo
+   2.15. Navarra - Servicio Navarro de Empleo - Nafar Lansare (SNE-NL)
+   2.16. País Vasco - Servicio Vasco de Empleo (Lanbide)
+   2.17. Región de Murcia - Servicio Regional de Empleo y Formación (SEF)
+   2.18. Ciudades Autónomas de Ceuta y Melilla (Direcciones Provinciales del SEPE)
+   2.19. Portal Central del Estado: Empléate (Ministerio de Trabajo y Economía Social)
+
+3. LA DEMANDA DE EMPLEO: CONCEPTOS BÁSICOS Y TRÁMITES
+   3.1. Qué es la Demanda de Empleo y el documento DARDE ("la cartilla del paro")
+   3.2. Estados de la demanda: Alta, Baja, Suspensión (con y sin intermediación)
+   3.3. Renovación periódica ("sellar el paro"): plazos, métodos telemáticos y presenciales
+   3.4. Olvidos y sellado fuera de plazo: consecuencias legales y régimen de sanciones
+   3.5. Reactivación de la demanda tras un periodo de baja o trabajo temporal
+   3.6. Emisión de informes y certificados oficiales de la demanda:
+        - Informe de periodo ininterrumpido en situación de desempleo
+        - Informe de ocupaciones solicitadas
+        - Informe de situación administrativa
+        - Certificado de demanda para reducciones de tarifas, becas y bonificaciones fiscales
+
+4. CÓMO SE SACA LA DEMANDA DE EMPLEO (PRIMERA INSCRIPCIÓN PASO A PASO)
+   4.1. Requisitos indispensables para darse de alta
+   4.2. Documentación que se debe presentar
+   4.3. Solicitud de Cita Previa (Canal autonómico vs. Canal SEPE)
+   4.4. Vía presencial: la entrevista de acogida ocupacional
+   4.5. Vía telemática: alta online con certificado digital, DNIe o sistema Cl@ve
+   4.6. Clasificación Nacional de Ocupaciones (CNO): selección de perfiles
+   4.7. El Itinerario Personalizado de Inserción (IPI) y asignación del tutor de empleo
+
+5. CÓMO SE MODIFICAN LOS DATOS DEL DEMANDANTE DE EMPLEO
+   5.1. Modificación de Datos Personales y de Contacto
+        - Domicilio y cambio de oficina gestora por empadronamiento
+        - Teléfono móvil (alertas SMS para ofertas y citas) y correo electrónico
+   5.2. Modificación de Datos Laborales (Experiencia Profesional)
+        - Registro de nuevos contratos y empresas
+        - Documentos de acreditación requeridos (Vida Laboral, certificados de empresa)
+   5.3. Modificación de Datos Formativos y Académicos
+        - Incorporación de títulos universitarios, grados de FP y Bachillerato
+        - Registro de Certificados de Profesionalidad y cursos acreditados
+        - Registro de idiomas extranjeros y acreditaciones informáticas
+        - Validación/cotejo de títulos originales en la oficina o sede electrónica
+   5.4. Modificación de Ocupaciones y Preferencias de Empleo
+        - Añadir o cambiar los códigos de ocupación preferente (hasta un máximo de 6 a 8 según CCAA)
+        - Ajuste de disponibilidad geográfica, turnos, tipo de jornada y salario pretendido
+
+6. CURSOS PÚBLICOS DE FORMACIÓN PARA EL EMPLEO (FPE): BÚSQUEDA Y SOLICITUD
+   6.1. Naturaleza y gratuidad de la Formación Profesional para el Empleo (FPE)
+   6.2. Tipología de cursos:
+        - Certificados de Profesionalidad (ahora Grados C del Sistema de Formación Profesional)
+        - Especialidades formativas transversales (digitalización, idiomas, IA, ofimática)
+        - Cursos con habilitación profesional oficial (carretillas, manipulador, CAP, soldadura, fitosanitarios)
+        - Cursos dirigidos a personas desempleadas vs. cursos para personas ocupadas
+   6.3. Niveles de cualificación y requisitos de titulación de acceso (Nivel 1, 2 y 3)
+   6.4. Proceso paso a paso para inscribirse en un curso público:
+        1. Localización en los buscadores autonómicos oficiales o Fundae
+        2. Preinscripción formal con la demanda de empleo en alta
+        3. Proceso de selección: baremación, pruebas de nivel y entrevistas
+        4. Notificación de admitidos y matriculación definitiva
+   6.5. Prácticas profesionales no laborales en empresas
+   6.6. Sistema de becas y ayudas económicas para el alumnado desempleado:
+        - Ayuda de transporte público o kilometraje
+        - Ayuda de manutención y alojamiento
+        - Ayuda a la conciliación (cuidado de hijos menores de 12 años o dependientes)
+        - Becas para personas con discapacidad
+
+7. ACCESO A LAS OFERTAS DE EMPLEO DEL SECTOR PRIVADO: CÓMO SE SOLICITA UN EMPLEO
+   7.1. El rol de la oficina de empleo como intermediaria autorizada
+   7.2. Mecanismo 1: Matching automático y selección técnica por sondeo (SISPE)
+        - Envío de carta de presentación o citación a entrevista
+        - Carácter voluntario vs. obligatorio para perceptores de prestación
+   7.3. Mecanismo 2: Autocandidatura e inscripción directa en portales públicos
+        - Registro de candidatura a través de la oficina virtual autonómica o Empléate
+        - Adaptación del CV al puesto ofertado
+        - Seguimiento del estado del proceso de selección
+   7.4. El Compromiso de Actividad:
+        - Definición legal y alcance
+        - Concepto de "colocación adecuada" (distancia máxima, retribución y categoría profesional)
+        - Consecuencias del rechazo no justificado de ofertas públicas o privadas
+
+8. CATÁLOGO COMPLETO DE SERVICIOS ADICIONALES DE LAS OFICINAS DE EMPLEO
+   8.1. Orientación Laboral e Intermediación Especializada
+   8.2. Acreditación de Competencias Profesionales adquiridas por experiencia laboral (Procedimiento Acredita)
+   8.3. Programas Mixtos de Empleo y Formación (Escuelas Taller, Casas de Oficios, Talleres de Empleo)
+   8.4. Sistema Nacional de Garantía Juvenil (apoyo integral para menores de 30 años)
+   8.5. Asesoramiento para el Autoempleo y Creación de Empresas:
+        - Pago Único de la prestación por desempleo (Capitalización)
+        - Compatibilización del paro con el alta en el Régimen Especial de Trabajadores Autónomos (RETA)
+        - Ayudas autonómicas a fondo perdido para emprendedores
+   8.6. Ofertas de Empleo Público gestionadas por las oficinas de empleo:
+        - Bolsas de trabajo temporal y peones de ayuntamientos, diputaciones y consejerías
+        - Planes de Empleo Local y Comarcal
+   8.7. Red EURES: Búsqueda de empleo en la Unión Europea y el Espacio Económico Europeo
+   8.8. Programas de protección e inserción para colectivos vulnerables:
+        - Personas con discapacidad (cuotas de reserva del 2% y Centros Especiales de Empleo)
+        - Parados de larga duración mayores de 45 y 52 años
+        - Víctimas de violencia de género y violencia sexual
+        - Personas en exclusión social o beneficiarias del Ingreso Mínimo Vital (IMV) / Renta de Inserción
+
+9. COORDINACIÓN FÍSICA Y GESTIÓN CON EL SEPE EN LA OFICINA COMPARTIDA
+   9.1. Distribución física: Mesa de Empleo de la CCAA vs. Mesa de Prestaciones del SEPE
+   9.2. Trámites exclusivos gestionados por el SEPE:
+        - Prestación contributiva por desempleo
+        - Subsidios por desempleo (por insuficiencia de cotización, por cargas familiares, mayores de 52 años)
+        - Subsidio Extraordinario por Desempleo (SED)
+        - Sanciones sobre prestaciones e incompatibilidades
+   9.3. La regla de oro del ciudadano:
+        "Paso 1: Dar de alta la demanda en la Comunidad Autónoma.
+         Paso 2: Solicitar cita en el SEPE dentro del plazo legal de 15 días hábiles tras el cese laboral."
+
+10. GLOSARIO DE TÉRMINOS, SIGLAS Y RECOMENDACIONES CLAVE
+
+
+================================================================================
+1. ARQUITECTURA DEL SISTEMA PÚBLICO DE EMPLEO EN ESPAÑA
+================================================================================
+
+1.1. DIFERENCIA FUNDAMENTAL: SEPE ESTATAL VS. SERVICIOS PÚBLICOS AUTONÓMICOS
+
+En el Estado español, la gestión pública del mercado de trabajo está descentralizada
+en virtud de la Constitución Española y de los Estatutos de Autonomía, regulada
+integralmente por la Ley 3/2023, de 28 de febrero, de Empleo. Esta descentralización
+produce una división de funciones que todo ciudadano debe comprender para evitar
+desplazamientos y trámites fallidos:
+
+A) EL SERVICIO PÚBLICO DE EMPLEO ESTATAL (SEPE) - ÁMBITO NACIONAL:
+   - Depende del Ministerio de Trabajo y Economía Social del Gobierno de España.
+   - Competencias exclusivas:
+     * Reconocimiento, gestión, cálculo, pago y control de las PRESTACIONES y
+       SUBSIDIOS por desempleo (la parte económica o "el cobro del paro").
+     * Coordinación de la política laboral estatal y del Sistema de Información
+       de los Servicios Públicos de Empleo (SISPE).
+     * Gestión directa de las políticas activas de empleo e intermediación en los
+       únicos territorios sin competencias transferidas: las Ciudades Autónomas
+       de Ceuta y Melilla.
+     * Gestión del Fondo de Garantía Salarial (FOGASA, como organismo adscrito).
+     * Coordinación de la Red EURES a nivel nacional.
+
+B) LOS SERVICIOS PÚBLICOS DE EMPLEO AUTONÓMICOS - ÁMBITO REGIONAL:
+   - Dependen de las Consejerías competentes en materia de Empleo de cada Comunidad Autónoma
+     (por ejemplo: SAE en Andalucía, LABORA en la Comunidad Valenciana, SOC en Cataluña,
+     Lanbide en Euskadi, Servicio de Empleo en Madrid, etc.).
+   - Competencias exclusivas:
+     * Tramitación, alta, modificación y sellado de la DEMANDA DE EMPLEO (el DARDE).
+     * Políticas Activas de Empleo: intermediación laboral y casamiento de ofertas
+       de empleo del sector privado.
+     * Oferta y gestión de los cursos públicos de Formación Profesional para el Empleo (FPE).
+     * Servicios de orientación profesional individualizada e itinerarios de inserción.
+     * Gestión de programas de fomento del empleo local (planes de empleo municipal).
+     * Acreditación de competencias profesionales por experiencia laboral.
+
+1.2. EL MODELO DE OFICINA MIXTA (DOBLE VENTANILLA)
+
+En la inmensa mayoría de las localidades españolas, los dos organismos conviven bajo
+el mismo techo físico en lo que se conoce como "Oficina Mixta de Empleo".
+Sin embargo, su funcionamiento interno y sus sistemas informáticos están separados:
+- Mostrador/Área Autonómica: Atiende la inscripción como demandante, la actualización
+  del currículum oficial, la orientación profesional, la inscripción a cursos públicos
+  y las ofertas de trabajo privado.
+- Mostrador/Área SEPE: Atiende la tramitación económica de subsidios, paro contributivo,
+  reclamaciones de nómina de prestaciones y capitalización del desempleo.
+
+Para ser atendido en cualquiera de las dos áreas se requiere, por norma general,
+CITA PREVIA INDEPENDIENTE. Una cita con el servicio autonómico NO sirve para que
+te atienda el SEPE, y viceversa.
+
+1.3. LA BASE DE DATOS CENTRALIZADA: SISPE
+
+Aunque las Comunidades Autónomas tienen sus propios portales y plataformas de gestión,
+todas las demandas de empleo están interconectadas a nivel nacional mediante el
+SISPE (Sistema de Información de los Servicios Públicos de Empleo).
+Esto garantiza que:
+- Ningún ciudadano pueda estar dado de alta simultáneamente en dos comunidades distintas.
+- Si una persona se traslada de domicilio y de comunidad, su expediente laboral y
+  formativo se traspasa de forma telemática.
+- Las ofertas de empleo de ámbito nacional (a través del portal Empléate) pueden
+  cruzar candidatos de cualquier punto de España.
+
+1.4. DERECHOS Y DEBERES DEL USUARIO
+
+- DERECHOS:
+  * Acceso gratuito y universal a todos los servicios de empleo y formación.
+  * Trato no discriminatorio por razones de edad, sexo, origen, religión u opinión.
+  * Confidencialidad y protección de los datos de carácter personal y curricular.
+  * Asignación de un tutor u orientador laboral para definir un plan de empleo.
+  * Información transparente sobre las ofertas de trabajo y cursos disponibles.
+
+- DEBERES:
+  * Proporcionar datos veraces sobre experiencia laboral, titulación académica y contacto.
+  * Renovar la demanda de empleo en las fechas exactas fijadas en el documento DARDE.
+  * Cumplir el "Compromiso de Actividad" (especialmente si se percibe prestación o subsidio).
+  * Comparecer ante la oficina o entidad formadora cuando sea formalmente citado.
+  * Aceptar colocaciones laborales adecuadas y participar en las acciones formativas asignadas.
+  * Notificar cualquier cambio de domicilio, baja por incapacidad temporal o salida al extranjero.
+
+
+================================================================================
+2. DIRECTORIO COMPLETO DE SERVICIOS PÚBLICOS DE EMPLEO POR COMUNIDAD AUTÓNOMA
+================================================================================
+
+A continuación se detalla el organismo gestor, el portal web oficial, los canales
+de atención y los sistemas de cita previa de las 17 Comunidades Autónomas y las 2
+Ciudades Autónomas:
+
+--------------------------------------------------------------------------------
+2.1. ANDALUCÍA
+--------------------------------------------------------------------------------
+- Denominación: Servicio Andaluz de Empleo (SAE) - Junta de Andalucía
+- Portal Web Oficial: https://www.juntadeandalucia.es/organismos/sae.html
+- Portal de Empleo / Oficina Virtual: https://ws054.juntadeandalucia.es/eureka2/eureka-redsae/
+- App Oficial Móvil: "App SAE" (disponible en Android e iOS)
+- Teléfono de atención al ciudadano: 955 625 695 / 012
+- Cita Previa SAE: A través de la App SAE, portal web o llamando al 955 625 695.
+- Particularidades: La renovación de la demanda se realiza automáticamente en determinadas
+  circunstancias de contingencia o bien telemáticamente mediante App o Web con código PIN/Cl@ve.
+
+--------------------------------------------------------------------------------
+2.2. ARAGÓN
+--------------------------------------------------------------------------------
+- Denominación: Instituto Aragonés de Empleo (INAEM) - Gobierno de Aragón
+- Portal Web Oficial: https://inaem.aragon.es
+- Portal de Ofertas y Trámites: https://inaem.aragon.es/servicios-al-ciudadano
+- App Oficial Móvil: "INAEM Orienta / INAEM Cita"
+- Teléfono de atención: 900 102 242 (gratuito) / 976 714 000
+- Cita Previa: Solicitud online desde la web del INAEM seleccionando oficina correspondiente.
+- Particularidades: Amplia red de telecentros y red de orientación universitaria (Universa).
+
+--------------------------------------------------------------------------------
+2.3. PRINCIPADO DE ASTURIAS
+--------------------------------------------------------------------------------
+- Denominación: Servicio Público de Empleo del Principado de Asturias (SEPEPA) / Trabajastur
+- Portal Web Oficial: https://trabajastur.asturias.es
+- App Oficial Móvil: "Trabajastur"
+- Teléfono de atención: 012 / 985 279 100
+- Cita Previa: A través del portal Trabajastur, sección "Cita Previa en Oficinas".
+- Integración SEPE: Sistema con enlace autorizado y coordinado con el SEPE.
+
+--------------------------------------------------------------------------------
+2.4. CANTABRIA
+--------------------------------------------------------------------------------
+- Denominación: Servicio Cántabro de Empleo (EMCAN) - Gobierno de Cantabria
+- Portal Web Oficial: https://empleacantabria.es
+- Portal de Trámites: https://www.empleacantabria.es/oficina-electronica
+- App Oficial Móvil: "Emcan Empleo"
+- Teléfono de atención: 012 / 942 207 900
+- Cita Previa: Trámite telemático en la web oficial o vía telefónica a la oficina comarcal.
+
+--------------------------------------------------------------------------------
+2.5. CASTILLA-LA MANCHA
+--------------------------------------------------------------------------------
+- Denominación: Servicio de Empleo de Castilla-La Mancha (Empleo CLM) - JCCM
+- Portal Web Oficial: https://empleo.jccm.es
+- Oficina Virtual: https://e-empleo.jccm.es/ovt/
+- App Oficial Móvil: "Empleo CLM"
+- Teléfono de atención: 012 / 925 274 552
+- Cita Previa: Sistema unificado de cita previa de la Junta de Comunidades de Castilla-La Mancha.
+
+--------------------------------------------------------------------------------
+2.6. CASTILLA Y LEÓN
+--------------------------------------------------------------------------------
+- Denominación: Servicio Público de Empleo de Castilla y León (ECyL) - Junta de Castilla y León
+- Portal Web Oficial: https://empleo.jcyl.es
+- Oficina Virtual: https://empleocastillayleon.jcyl.es/oficinavirtual/
+- App Oficial Móvil: "ECyL Móvil"
+- Teléfono de atención: 012 / 983 327 850
+- Cita Previa: Solicitable online con DNI/NIE y fecha de nacimiento o PIN de demandante.
+
+--------------------------------------------------------------------------------
+2.7. CATALUÑA
+--------------------------------------------------------------------------------
+- Denominación: Servei Públic d'Ocupació de Catalunya (SOC) - Generalitat de Catalunya
+- Portal Web Oficial: https://serveiocupacio.gencat.cat
+- Oficina Virtual / Trámites: https://cercadordofeines.gencat.cat / Tràmits Gencat
+- App Oficial Móvil: No centralizada única; gestión integrada en idCAT / Tràmits Gencat.
+- Teléfono de atención: 900 800 046 (gratuito) / 012
+- Cita Previa: Mediante formulario web en serveiocupacio.gencat.cat/cita-previa.
+- Idiomas: Catalán y Castellano.
+
+--------------------------------------------------------------------------------
+2.8. COMUNIDAD DE MADRID
+--------------------------------------------------------------------------------
+- Denominación: Dirección General del Servicio Público de Empleo - Consejería de Economía y Empleo
+- Portal Web Oficial: https://www.comunidad.madrid/servicios/empleo
+- Oficina Virtual de Empleo: https://gestiona.comunidad.madrid/portal-empleo/
+- App Oficial Móvil: "App Empleo Madrid"
+- Teléfono de atención: 012 / 91 580 42 60
+- Cita Previa: Portal autonómico de cita previa (código origen 28 interconectado con SEPE).
+  Permite seleccionar trámite autonómico (demanda/cursos) o trámite estatal (SEPE).
+
+--------------------------------------------------------------------------------
+2.9. COMUNIDAD VALENCIANA
+--------------------------------------------------------------------------------
+- Denominación: LABORA - Servei Valencià d'Ocupació i Formació (Generalitat Valenciana)
+- Portal Web Oficial: https://labora.gva.es
+- Portal de Trámites y Ofertas: https://puntlabora.gva.es/puntlabora/
+- App Oficial Móvil: "GVA AutoServef / GVA Punt LABORA"
+- Teléfono de atención: 012 / 963 866 000
+- Cajeros automáticos "Punt LABORA": Terminales físicos situados en oficinas y ayuntamientos
+  para sellar, obtener duplicados y consultar ofertas sin cita previa.
+
+--------------------------------------------------------------------------------
+2.10. EXTREMADURA
+--------------------------------------------------------------------------------
+- Denominación: Servicio Extremeño Público de Empleo (SEXPE) - Junta de Extremadura
+- Portal Web Oficial: https://extremaduratrabaja.juntaex.es
+- Portal de Trámites: https://sexpeemplea.juntaex.es
+- App Oficial Móvil: "Extremadura Trabaja"
+- Teléfono de atención: 900 131 221 / 012
+- Cita Previa: Solicitud telemática en sexpeemplea.juntaex.es o presencial en centros de empleo.
+
+--------------------------------------------------------------------------------
+2.11. GALICIA
+--------------------------------------------------------------------------------
+- Denominación: Servizo Público de Emprego de Galicia (Emprego Galicia) - Xunta de Galicia
+- Portal Web Oficial: https://empregogalicia.xunta.gal
+- Oficina Virtual: https://oficinavirtualemprego.xunta.gal
+- App Oficial Móvil: "MOBEM - Emprego Galicia"
+- Teléfono de atención: 012 / 981 545 400
+- Cita Previa: Sistema en línea de cita previa de la Xunta de Galicia con certificado o Cl@ve.
+
+--------------------------------------------------------------------------------
+2.12. ISLAS BALEARES
+--------------------------------------------------------------------------------
+- Denominación: Servei d'Ocupació de les Illes Balears (SOIB) - Govern de les Illes Balears
+- Portal Web Oficial: https://soib.es
+- Portal de Trámites: https://soib.es/tramits-ciutadania/
+- App Oficial Móvil: "SOIB - Cita prèvia i tràmits"
+- Teléfono de atención: 012 / 971 225 240
+- Cita Previa: A través de la web del SOIB con derivación directa o en oficinas de Mallorca,
+  Menorca, Ibiza y Formentera.
+
+--------------------------------------------------------------------------------
+2.13. ISLAS CANARIAS
+--------------------------------------------------------------------------------
+- Denominación: Servicio Canario de Empleo (SCE) - Gobierno de Canarias
+- Portal Web Oficial: https://www.gobiernodecanarias.org/empleo/sce/
+- Sede Electrónica: https://sede.gobiernodecanarias.org/empleo/
+- App Oficial Móvil: "SCE Empleo"
+- Teléfono de atención: 012 / 928 211 562 (Las Palmas) / 922 470 012 (S/C de Tenerife)
+- Cita Previa: Vía web en la sede del SCE o mediante llamada directa al 012.
+
+--------------------------------------------------------------------------------
+2.14. LA RIOJA
+--------------------------------------------------------------------------------
+- Denominación: Servicio Riojano de Empleo - Gobierno de La Rioja
+- Portal Web Oficial: https://www.larioja.org/empleo/es
+- Oficina Electrónica: https://sieweb.larioja.org/
+- Teléfono de atención: 012 / 941 291 100
+- Cita Previa: Tramitación online en el portal del Gobierno de La Rioja.
+
+--------------------------------------------------------------------------------
+2.15. COMUNIDAD FORAL DE NAVARRA
+--------------------------------------------------------------------------------
+- Denominación: Servicio Navarro de Empleo - Nafar Lansare (SNE-NL) - Gobierno de Navarra
+- Portal Web Oficial: https://www.empleo.navarra.es
+- Portal de Trámites: https://sedeelectronica.navarra.es
+- Teléfono de atención: 848 424 400 / 012
+- Cita Previa: Sistema digital de reserva de cita en agencias de empleo de Pamplona, Tudela,
+  Estella, Tafalla, Lodosa, Santesteban y Alsasua.
+
+--------------------------------------------------------------------------------
+2.16. PAÍS VASCO
+--------------------------------------------------------------------------------
+- Denominación: Lanbide - Servicio Vasco de Empleo (Eusko Jaurlaritza - Gobierno Vasco)
+- Portal Web Oficial: https://www.lanbide.euskadi.eus
+- Portal de Trámites: Mi Lanbidenet (acceso con BakQ, certificado digital o DNIe)
+- App Oficial Móvil: "Lanbide"
+- Teléfono de atención: 945 160 600 / 012
+- Particularidad: Lanbide gestiona también la Renta de Garantía de Ingresos (RGI) y el
+  Ingreso Mínimo Vital (IMV) en la Comunidad Autónoma Vasca.
+
+--------------------------------------------------------------------------------
+2.17. REGIÓN DE MURCIA
+--------------------------------------------------------------------------------
+- Denominación: Servicio Regional de Empleo y Formación (SEF) - Región de Murcia
+- Portal Web Oficial: https://www.sefcarm.es
+- Aplicación de Trámites: SEF en línea
+- App Oficial Móvil: "SEF Móvil"
+- Teléfono de atención: 012 / 968 362 000
+- Cita Previa: A través de cita en línea en www.sefcarm.es o llamando al teléfono de citas.
+
+--------------------------------------------------------------------------------
+2.18. CIUDADES AUTÓNOMAS DE CEUTA Y MELILLA
+--------------------------------------------------------------------------------
+- Organismo Gestor: Servicio Público de Empleo Estatal (SEPE) - Direcciones Provinciales
+- Al no tener transferidas las competencias de empleo activo, las oficinas de Ceuta y Melilla
+  son gestionadas en su totalidad por el SEPE del Gobierno de España.
+- Portal Web: https://sede.sepe.gob.es
+- Dirección Provincial SEPE Ceuta: Calle Solís, 1. Tel: 956 51 02 05
+- Dirección Provincial SEPE Melilla: Calle Luis de Sotomayor, 16. Tel: 952 99 07 98
+- Cita Previa: Directamente en la sede electrónica del SEPE (citaprevia-sede.sepe.gob.es).
+
+--------------------------------------------------------------------------------
+2.19. PORTAL CENTRAL DEL ESTADO: "EMPLÉATE"
+--------------------------------------------------------------------------------
+- Dirección Web: https://sede.sepe.gob.es / https://empleate.gob.es
+- Es la plataforma pública estatal donde confluyen las ofertas de empleo de todos los
+  servicios autonómicos, ofertas del sector público, y portales privados colaboradores.
+- Permite la creación de un perfil único a nivel nacional con verificación de titulaciones
+  e historial en el SISPE.
+
+
+================================================================================
+3. LA DEMANDA DE EMPLEO: CONCEPTOS BÁSICOS Y TRÁMITES
+================================================================================
+
+3.1. QUÉ ES LA DEMANDA DE EMPLEO Y EL DARDE
+
+La Demanda de Empleo es el registro administrativo formal mediante el cual un ciudadano
+solicita trabajo ante los servicios públicos de empleo y acredita su condición oficial de
+"demandante de empleo" (desempleado o trabajador en mejora de empleo).
+
+El DARDE (Documento de Alta y Renovación de la Demanda de Empleo), conocido popularmente
+como "la cartilla del paro" o "el papel de la demanda", es el comprobante oficial que
+emite la oficina de empleo. Contiene:
+- Datos personales del demandante (nombre, DNI/NIE, dirección, código de demanda).
+- Oficina de empleo asignada.
+- Ocupaciones solicitadas preferentes.
+- Situación administrativa (Alta, Suspensión, etc.).
+- Fecha límite para la PRÓXIMA RENOVACIÓN.
+- Códigos de verificación y claves de acceso web (PIN o contraseña autonómica).
+
+3.2. ESTADOS DE LA DEMANDA DE EMPLEO
+
+La demanda no siempre está en la misma situación; puede presentar diversos estados:
+
+1. ALTA:
+   - El demandante está plenamente disponible para trabajar, recibir ofertas y realizar cursos.
+   - Es el estado indispensable para percibir prestaciones y subsidios del SEPE.
+
+2. SUSPENSIÓN CON INTERMEDIACIÓN:
+   - Situación temporal en la que el demandante no puede trabajar de inmediato pero
+     desea seguir vinculado a las ofertas o cursos formativos (ejemplo: realización de un curso
+     de corta duración, beca formativa, o permisos justificados).
+
+3. SUSPENSIÓN SIN INTERMEDIACIÓN:
+   - La demanda queda "pausada". El sistema NO le envía ofertas de trabajo ni le convoca
+     a cursos. Causas habituales:
+     * Incapacidad temporal (baja médica por enfermedad común o accidente).
+     * Maternidad, paternidad o riesgo durante el embarazo.
+     * Privación de libertad o cumplimiento de deberes públicos inexcusables.
+   - En este estado, durante el periodo acreditado médicamente, el usuario no está obligado
+     a acudir a entrevistas ni a sellar en la fecha habitual mientras dure la contingencia.
+
+4. BAJA:
+   - Extinción total de la inscripción como demandante de empleo. Motivos:
+     * Colocación laboral por cuenta ajena o alta en el régimen de autónomos.
+     * No haber renovado la demanda en el día fijado (olvido de sellado).
+     * Sanción por infracción grave o rechazo injustificado de oferta adecuada.
+     * Traslado al extranjero sin la debida comunicación previa.
+     * Jubilación o incapacidad permanente absoluta.
+
+3.3. RENOVACIÓN PERIÓDICA ("SELLAR EL PARO")
+
+La demanda de empleo tiene una validez temporal (habitualmente de 90 días, unos tres meses).
+Para mantenerla viva y no causar baja, el demandante DEBE renovarla periódicamente.
+
+CÓMO SE RENUEVA ("SELLAR"):
+1. VÍA TELEMÁTICA (RECOMENDADA - 24 HORAS):
+   - Se puede realizar a través del portal de empleo autonómico o desde la App móvil oficial
+     de la Comunidad Autónoma.
+   - Horario: Desde las 00:00:00 hasta las 23:59:59 horas del DÍA EXACTO que marca el DARDE.
+   - Medios de acceso: Certificado digital, DNI electrónico, sistema Cl@ve, o bien
+     mediante usuario/DNI y contraseña autonómica / código PIN impreso en el DARDE anterior.
+   - Al sellar por internet, el sistema genera de inmediato un NUEVO ARCHIVO PDF (el nuevo DARDE)
+     con la siguiente fecha de renovación y el código seguro de verificación (CSV). Es crucial
+     descargarlo y guardarlo como justificante legal.
+
+2. VÍA PRESENCIAL:
+   - En la oficina de empleo que le corresponda por domicilio.
+   - En algunas Comunidades Autónomas se requiere cita previa obligatoria incluso para renovar,
+     mientras que en otras se dispone de terminales automáticos ("Punt LABORA" en Valencia,
+     cajeros autonómicos en Galicia o Madrid) donde se introduce el DNI físico y se emite
+     el tique de renovación al instante.
+
+3. VÍA TELEFÓNICA (SOLO EN DETERMINADAS COMUNIDADES):
+   - Comunidades como Canarias o Navarra permiten el sellado telefónico a través del 012,
+     tras verificar la identidad mediante una serie de preguntas de control y envío de SMS.
+
+3.4. OLVIDOS Y SELLADO FUERA DE PLAZO: CONSECUENCIAS Y RÉGIMEN SANCIONADOR
+
+Si una persona olvida sellar el día correspondiente, el sistema informático le da de baja
+automática de la base de datos a las 00:00 del día siguiente.
+
+CONSECUENCIAS LEGALES:
+A) SI NO SE COBRA PRESTACIÓN NI SUBSIDIO:
+   - La demanda simplemente se da de baja. Se pierde la antigüedad acumulada (lo cual
+     puede perjudicar a la hora de computar como "parado de larga duración" para ayudas
+     sociales, planes de empleo municipal o cursos con baremo por antigüedad).
+   - Solución: Acudir a la oficina o entrar en la web oficial y solicitar la REACTIVACIÓN
+     inmediata de la demanda.
+
+B) SI SE PERCIBE PRESTACIÓN CONTRIBUTIVA O SUBSIDIO DEL SEPE:
+   - La no renovación en fecha constituye una INFRACCIÓN LEVE según el Real Decreto
+     Legislativo 5/2000 (Ley sobre Infracciones y Sanciones en el Orden Social - LISOS).
+   - Escala de sanciones acumulativas en un periodo de un año:
+     * 1ª infracción: Pérdida de 1 mes de la prestación económica.
+     * 2ª infracción: Pérdida de 3 meses de la prestación económica.
+     * 3ª infracción: Pérdida de 6 meses de la prestación económica.
+     * 4ª infracción: Pérdida total y definitiva de la prestación o subsidio.
+   - ¿Se puede justificar un retraso? Sí, pero ÚNICAMENTE por causas de FUERZA MAYOR
+     acreditadas documentalmente (ingreso hospitalario de urgencia, citación judicial inexcusable,
+     o avería masiva demostrable de los servidores web autonómicos certificada por la administración).
+     El olvido personal, problemas cotidianos de conexión doméstica o despistes NO son aceptados.
+
+3.5. REACTIVACIÓN DE LA DEMANDA
+
+Cuando finaliza un contrato laboral (por ejemplo, tras un trabajo de verano o un contrato
+temporal de unos meses), o tras una baja voluntaria/sanción, la demanda NO se reactiva sola:
+- El ciudadano debe realizar el trámite de REACTIVACIÓN (Reinscripción) en su servicio autonómico.
+- Se puede hacer online si se conservan las claves o certificado digital, o presencialmente.
+- Una vez reactivada la demanda autonómica, ya se puede tramitar ante el SEPE la reanudación
+  del cobro del paro o la solicitud de una nueva prestación.
+
+3.6. EMISIÓN DE INFORMES Y CERTIFICADOS DE LA DEMANDA
+
+A través de la oficina virtual de cada comunidad autónoma (sin necesidad de cita presencial,
+utilizando certificado digital, Cl@ve o clave web) se pueden generar al instante y con código CSV
+los siguientes certificados oficiales:
+1. Informe de Periodo Ininterrumpido Inscrito en Desempleo:
+   - Acredita cuántos meses o años lleva la persona inscrita de forma continua sin interrupción.
+   - Esencial para optar a las ayudas a parados de larga duración (ej. mayores de 52 años) o bonificaciones a empresas.
+2. Informe de Ocupaciones Solicitadas:
+   - Refleja qué puestos de trabajo tiene dados de alta el demandante en el sistema.
+3. Informe de Situación Administrativa:
+   - Certifica si la persona está en alta, suspensión o baja en una fecha determinada.
+4. Certificado de Demanda para Reducciones y Exenciones:
+   - Documento exigido por universidades para exención de tasas de matrícula, por operadoras de
+     transporte público para el "bono social de transporte", o por ayuntamientos para bonificaciones
+     en instalaciones deportivas y escuelas infantiles.
+
+
+================================================================================
+4. CÓMO SE SACA LA DEMANDA DE EMPLEO (PRIMERA INSCRIPCIÓN PASO A PASO)
+================================================================================
+
+4.1. REQUISITOS INDISPENSABLES
+
+Para inscribirse por primera vez como demandante de empleo en España es necesario:
+1. Edad: Tener al menos 16 años cumplidos (edad mínima legal para trabajar en España).
+2. Nacionalidad y Situación Administrativa:
+   - Ciudadanos españoles o de cualquier país miembro de la Unión Europea, Espacio Económico
+     Europeo o Suiza (o familiares de estos con tarjeta de residencia comunitaria).
+   - Ciudadanos extranjeros no comunitarios: Deben poseer autorización de residencia y trabajo
+     en vigor en España (TIE o resguardo oficial que habilite legalmente para trabajar por cuenta ajena).
+3. Capacidad de obrar: No estar impedido física o legalmente para trabajar.
+4. Domicilio: Estar empadronado en el municipio donde radica la oficina de empleo solicitada.
+
+4.2. DOCUMENTACIÓN A APORTAR
+
+El día de la cita o en el formulario telemático de alta inicial se debe aportar:
+- Identificación personal: DNI original en vigor (españoles) o NIE con documento de identidad
+  de su país / Pasaporte y TIE (extranjeros).
+- Número de Afiliación a la Seguridad Social (NUSS). Si no se tiene, la propia oficina o la sede
+  de la TGSS puede generarlo previamente.
+- Justificante de Domicilio: Certificado o volante de empadronamiento si el domicilio no
+  coincide con el que figura en el DNI.
+- Documentos Académicos: Títulos originales oficiales (ESO, Bachillerato, Grado Universitario,
+  FP). En el caso de títulos universitarios o secundarios obtenidos en el extranjero, es
+  estrictamente obligatoria la correspondiente Resolución de Homologación o Equivalencia
+  del Ministerio de Educación de España.
+- Documentación Laboral: Contratos anteriores, informe de Vida Laboral emitido por la Seguridad Social,
+  o certificados de empresa que acrediten puestos y categorías profesionales desempeñadas.
+- Documentación Complementaria: Permisos de conducir (B, C, D, trailer), carnet de carretillero,
+  certificados de manipulador de alimentos, certificados de idiomas oficiales (Cambridge, DELF, Goethe,
+  Escuela Oficial de Idiomas), títulos de cursos de formación para el empleo.
+
+4.3. SOLICITUD DE CITA PREVIA
+
+Para el alta inicial, la mayoría de los servicios autonómicos exigen presencia física para
+cotejar los documentos originales y realizar la entrevista diagnóstica:
+1. Acceder al portal web de cita previa del servicio de empleo de su Comunidad Autónoma
+   (véase el directorio del Capítulo 2).
+2. Elegir el motivo: "Inscripción inicial de demanda de empleo" o "Alta por primera vez".
+3. Introducir DNI/NIE, código postal y datos de contacto.
+4. El sistema asignará día y hora en la oficina comarcal que corresponda por empadronamiento.
+
+4.4. LA ENTREVISTA DE ACOGIDA OCUPACIONAL (VÍA PRESENCIAL)
+
+Durante la cita presencial, un técnico de empleo u orientador público realiza la "Entrevista
+de Clasificación Profesional":
+- Se introducen en el sistema informático todos los datos curriculares (estudios reglados, cursos,
+  experiencias laborales, funciones reales desarrolladas).
+- Se analizan las competencias transversales (manejo de herramientas digitales, idiomas, disponibilidad).
+- Se define la disponibilidad real del demandante:
+  * Jornada completa, parcial o por turnos.
+  * Disposición para trabajar en turnos de mañana, tarde, noche o rotativo.
+  * Movilidad geográfica: ámbito local, comarcal, provincial, autonómico, nacional o europeo (Red EURES).
+  * Disposición de vehículo propio y carnet de conducir.
+
+4.5. VÍA TELEMÁTICA (ALTA ONLINE)
+
+En ciertas Comunidades Autónomas (como Madrid, Cataluña o la Comunidad Valenciana), se
+permite realizar el alta inicial de forma 100% telemática a través de su sede electrónica,
+siempre que se disponga de certificado digital o DNI electrónico:
+- Se completa un formulario exhaustivo de datos personales y trayectoria.
+- Se adjuntan archivos escaneados en PDF de los títulos oficiales y certificados laborales.
+- La oficina realiza una validación documental diferida y puede citar por videollamada o
+  teléfono al usuario para contrastar la información antes de activar la demanda en el SISPE.
+
+4.6. CÓDIGOS CNO (CLASIFICACIÓN NACIONAL DE OCUPACIONES)
+
+En la entrevista se eligen las ocupaciones en las que el usuario desea trabajar según la
+Clasificación Nacional de Ocupaciones (CNO-11):
+- Cada ocupación tiene un código oficial de 8 dígitos (ejemplo: 51201014 - Camarero, 21211019 -
+  Ingeniero técnico en informática de gestión, 41111011 - Administrativo comercial).
+- El demandante puede elegir habitualmente entre 6 y 8 ocupaciones como máximo.
+- Regla administrativa: Solo se pueden incluir ocupaciones para las cuales el demandante cuente
+  con la titulación habilitante requerida o con al menos un mínimo de experiencia laboral
+  demostrable mediante contrato o vida laboral (salvo ocupaciones no cualificadas como peón,
+  limpiador o mozo de almacén).
+
+4.7. EMISIÓN DEL DARDE Y EL ITINERARIO PERSONALIZADO (IPI)
+
+Al finalizar el trámite:
+1. El orientador imprime y entrega el DARDE en papel con el código PIN de acceso telemático.
+2. Se formaliza el Itinerario Personalizado de Inserción (IPI) conforme a la Ley de Empleo 2023:
+   - Se evalúa la empleabilidad del ciudadano.
+   - Se le asigna un perfil (baja, media o alta empleabilidad).
+   - Se le ofrece la adhesión a planes de formación, talleres de búsqueda activa de empleo
+     o sesiones de orientación individual con su tutor de referencia.
+
+
+================================================================================
+5. CÓMO SE MODIFICAN LOS DATOS DEL DEMANDANTE DE EMPLEO
+================================================================================
+
+El expediente de la demanda de empleo no es estático; debe mantenerse siempre rigurosamente
+actualizado para no perder oportunidades de empleo y formación.
+
+5.1. MODIFICACIÓN DE DATOS PERSONALES Y DE CONTACTO
+
+A) CAMBIO DE TELÉFONO O CORREO ELECTRÓNICO:
+   - Trámite 100% online en el portal autonómico (Mi Perfil / Datos de Contacto).
+   - Importancia crítica: Las oficinas de empleo y las empresas privadas envían las alertas
+     de ofertas urgentes y las convocatorias a cursos mediante SMS o correo electrónico. Si el
+     número no está actualizado, el usuario no se enterará y podrá ser sancionado por incomparecencia.
+
+B) CAMBIO DE DOMICILIO:
+   - Dentro del mismo municipio o zona: Se puede modificar por internet acreditando el nuevo
+     domicilio si no altera la oficina de referencia.
+   - Entre municipios o entre Comunidades Autónomas (Traslado de Expediente):
+     * Si te mudas a otra localidad que pertenece a otra oficina o a otra Comunidad Autónoma,
+       debes empadronarte primero en el nuevo ayuntamiento.
+     * Posteriormente, acudir a la nueva oficina de empleo de destino con el volante de
+       empadronamiento. La nueva oficina solicitará telemáticamente el "Traslado de Demanda"
+       mediante el SISPE.
+     * Todo el historial de cursos, ocupaciones y antigüedad se conserva íntegro.
+
+5.2. MODIFICACIÓN DE DATOS LABORALES (EXPERIENCIA PROFESIONAL)
+
+Cada vez que el demandante finaliza un trabajo o acumula una nueva experiencia laboral relevante:
+- Cruce automático con la TGSS: El sistema registra las altas y bajas en la Seguridad Social.
+  Sin embargo, la Seguridad Social solo conoce la categoría de cotización genérica, no las tareas
+  ni especialidades desarrolladas.
+- Acreditación en la Oficina de Empleo:
+  * Para que la experiencia compute formalmente en los baremos de las ofertas del sector privado,
+    el demandante debe solicitar cita de "Modificación de Datos" o acceder al portal autonómico.
+  * Se deben presentar: Contrato de trabajo original, prórrogas, finiquito/certificado de empresa,
+    o en su defecto el Informe de Vida Laboral detallado.
+  * El técnico añadirá las empresas, el tiempo trabajado y las funciones exactas realizadas.
+
+5.3. MODIFICACIÓN DE DATOS FORMATIVOS Y ACADÉMICOS
+
+Si el demandante obtiene un nuevo título universitario, un máster, un grado medio/superior de FP,
+un certificado de idiomas o un carnet profesional:
+- El registro oficial no se realiza de forma automática por el simple hecho de aprobar.
+- Procedimiento:
+  1. Vía Telemática: Acceder al área privada con certificado digital / Cl@ve, subir el escaneado
+     oficial del título (o resguardo oficial de solicitud del título con justificante del pago de tasas)
+     junto con el Código Seguro de Verificación (CSV) del Ministerio de Educación.
+  2. Vía Presencial: Acudir con cita previa aportando el Título Original para que el funcionario
+     proceda a su compulsa / cotejo digital en el SISPE.
+- Formación No Reglada y Cursos Privados:
+  * Solo se admiten e incorporan al expediente del SISPE aquellos cursos que cumplan requisitos
+    oficiales: impartidos por centros homologados, con mención explícita del número de horas,
+    temario y fechas de impartición. Cursos informales de menos de 10-20 horas sin programa
+    detallado suelen descartarse por los técnicos baremadores.
+
+5.4. MODIFICACIÓN DE OCUPACIONES Y PREFERENCIAS
+
+Si el demandante desea cambiar los puestos de trabajo en los que busca empleo:
+- Puede solicitar la modificación de los códigos CNO solicitados.
+- Puede modificar su disponibilidad geográfica: ampliar de nivel local a nivel nacional
+  (para recibir ofertas de cualquier provincia) o restringirla por motivos justificados.
+- Puede modificar el tipo de contrato aceptado: solo contratos indefinidos, temporales,
+  a jornada completa o tiempo parcial.
+
+
+================================================================================
+6. CURSOS PÚBLICOS DE FORMACIÓN PARA EL EMPLEO (FPE): BÚSQUEDA Y SOLICITUD
+================================================================================
+
+6.1. NATURALEZA Y GRATUIDAD DE LA FPE
+
+La Formación Profesional para el Empleo (FPE) es un sistema público de capacitación técnica
+financiado mediante las cuotas de formación profesional que abonan trabajadores y empresas a la
+Seguridad Social, fondos del Estado y el Fondo Social Europeo (FSE+).
+- PRINCIPIO FUNDAMENTAL: Todos los cursos ofrecidos por los servicios públicos de empleo
+  son 100% GRATUITOS para el alumno. Está terminantemente prohibido el cobro de matrícula,
+  material didáctico o tasas de examen.
+
+6.2. TIPOLOGÍA DE CURSOS
+
+1. CERTIFICADOS DE PROFESIONALIDAD (GRADOS C DEL SISTEMA DE FP):
+   - Son titulaciones oficiales con validez jurídica y académica en toda España y en toda la
+     Unión Europea, expedidas por el Ministerio de Educación y FP y los servicios autonómicos.
+   - Certifican que la persona posee el conjunto de competencias profesionales necesarias
+     para desarrollar una actividad laboral identificable en el Catálogo Nacional de Cualificaciones.
+   - Se estructuran en Módulos Formativos y Unidades Formativas.
+   - Incluyen OBLIGATORIAMENTE un Módulo de Formación Práctica en Centros de Trabajo (prácticas no
+     laborales en empresas reales, habitualmente entre 80 y 160 horas).
+
+2. ESPECIALIDADES FORMATIVAS Y COMPETENCIAS TRANSVERSALES:
+   - Cursos de reciclaje profesional enfocados en competencias demandadas por el mercado:
+     * Competencias Digitales: Ofimática, ciberseguridad, programación web, Inteligencia Artificial aplicada.
+     * Idiomas extranjeros: Inglés comercial, atención al cliente en alemán o francés (niveles A1 a C1).
+     * Gestión y administración: Nóminas y Seguridad Social, contabilidad, gestión de almacén.
+
+3. CURSOS HABILITANTES CON CARNET PROFESIONAL:
+   - Carnet de Operador de Carretillas Elevadoras (Norma UNE 58451).
+   - Certificado de Aptitud Profesional (CAP) inicial y continuo para conductores de camión y autobús.
+   - Carnet de Manipulador de Alimentos e Higiene Alimentaria.
+   - Carnet de Instalador de Climatización, Gases Fluorados o Electricidad de Baja Tensión.
+   - Carnet de Aplicador de Productos Fitosanitarios (básico y cualificado).
+
+4. COLECTIVO DESTINATARIO:
+   - Cursos prioritarios para trabajadores desempleados (Modalidad II / FOD): Exigen estar dado
+     de alta como demandante de empleo en el momento de la solicitud y de la selección.
+   - Cursos para trabajadores ocupados (Modalidad I): Diseñados para empleados y autónomos, pero
+     con un porcentaje de plazas de reserva legal (normalmente entre el 20% y el 30%) para personas
+     desempleadas inscritas.
+
+6.3. NIVELES DE CUALIFICACIÓN Y REQUISITOS DE ACCESO
+
+Los cursos conducentes a Certificados de Profesionalidad se dividen en tres niveles de acceso:
+
+- NIVEL 1 (Cualificación básica):
+  * Sin requisitos académicos previos ni experiencia previa exigida.
+  * Ejemplos: Operaciones auxiliares de servicios administrativos, limpieza de edificios,
+    peón agrícola, auxiliar de almacén.
+
+- NIVEL 2 (Cualificación media):
+  * Requisito: Estar en posesión de alguna de las siguientes acreditaciones:
+    a) Título de Graduado en Educación Secundaria Obligatoria (ESO).
+    b) Un Certificado de Profesionalidad de Nivel 2.
+    c) Un Certificado de Profesionalidad de Nivel 1 de la misma familia profesional.
+    d) Prueba de acceso superada a Ciclos Formativos de Grado Medio.
+    e) Prueba de acceso a la universidad para mayores de 25 o 45 años.
+    f) Si no se tiene titulación: Haber superado las "Pruebas de Competencias Clave"
+       de Nivel 2 (Lengua Castellana y Matemáticas, e Idioma si el curso lo requiere),
+       que convocan periódicamente los servicios de empleo autonómicos.
+  * Ejemplos: Actividades de gestión administrativa, soldadura, atención sociosanitaria a personas
+    en el domicilio o en instituciones sociales, mecánica del automóvil.
+
+- NIVEL 3 (Cualificación técnica y superior):
+  * Requisito:
+    a) Título de Bachillerato (o BUP/COU).
+    b) Título de Técnico Especialista (FP Grado Superior) o Técnico (FP Grado Medio).
+    c) Certificado de Profesionalidad de Nivel 3.
+    d) Certificado de Profesionalidad de Nivel 2 de la misma familia y área profesional.
+    e) Prueba de acceso superada a Ciclos Formativos de Grado Superior o a la Universidad.
+    f) Pruebas de Competencias Clave de Nivel 3 superadas.
+  * Ejemplos: Programación en lenguajes estructurados, docencia de la formación profesional
+    para el empleo, gestión contable y fiscal, dirección y coordinación de servicios de restauración.
+
+6.4. PROCESO PASO A PASO PARA SOLICITAR UN CURSO PÚBLICO
+
+PASO 1: BÚSQUEDA DEL CURSO
+- Entrar en el buscador de formación del portal de empleo de su Comunidad Autónoma
+  (ej. "Cursos Formación Empleo Madrid", "Cursos FPE Andalucía", "Formació SOC Gencat", etc.)
+  o en el buscador de cursos de la Fundación Estatal para la Formación en el Empleo (Fundae).
+- Filtrar por provincia, familia profesional, modalidad (presencial, teleformación u online,
+  mixta) y fecha de inicio.
+
+PASO 2: PREINSCRIPCIÓN
+- Hacer clic en "Solicitar / Preinscribirse".
+- El sistema solicitará la identificación telemática mediante Cl@ve, certificado o número de
+  demanda de empleo (DARDE) y contraseña.
+- Se puede solicitar inscripción en varios cursos simultáneamente, pero solo se podrá cursar
+  uno a la vez si coinciden en el horario presencial.
+
+PASO 3: PROCESO DE SELECCIÓN Y BAREMACIÓN
+- Una vez cerrado el plazo de preinscripción, la entidad formadora (centro propio del servicio
+  público de empleo o academia privada homologada subvencionada) convoca a los inscritos.
+- La selección se realiza con arreglo a los criterios fijados por la Consejería de Empleo:
+  * Colectivos prioritarios: Parados de larga duración, mayores de 45 años, jóvenes sin cualificación,
+    mujeres víctimas de violencia de género, personas con discapacidad.
+  * Entrevista motivacional o prueba técnica previa de conocimientos.
+
+PASO 4: PUBLICACIÓN DE LISTAS Y MATRICULACIÓN
+- Se publican las listas de personas admitidas y lista de reserva (suplentes).
+- El alumno seleccionado debe aportar copia del DNI, copia del DARDE y copia del título académico
+  que acredita el cumplimiento del nivel para formalizar la matrícula.
+
+6.5. PRÁCTICAS NO LABORALES EN EMPRESAS
+
+Los cursos de Certificado de Profesionalidad incluyen un módulo formativo obligatorio de
+prácticas no laborales en empresas privadas colaboradoras:
+- Duración habitual: Entre 80 y 160 horas.
+- Objetivos: Aplicar en entorno laboral real los conocimientos adquiridos en el aula y
+  favorecer la contratación directa tras la formación.
+- Exención del módulo de prácticas: Si el alumno ya cuenta con experiencia laboral previa
+  acreditada de al menos 3 a 6 meses en esa misma ocupación, puede solicitar formalmente
+  la exención de las prácticas y obtener el certificado directamente tras aprobar los módulos teóricos.
+
+6.6. BECAS Y AYUDAS ECONÓMICAS PARA ALUMNOS DESEMPLEADOS
+
+Los alumnos que cursan acciones formativas del servicio público de empleo tienen derecho a percibir
+ayudas económicas públicas para garantizar que la falta de recursos no impida su cualificación:
+
+1. AYUDA DE TRANSPORTE:
+   - Transporte urbano: Billete o abono de transporte público colectivo si el curso se realiza
+     en el mismo municipio pero a distancia justificada.
+   - Transporte interurbano / Kilometraje: Si el curso se imparte en un municipio diferente al de
+     residencia del demandante, se abona una cuantía por kilómetro de desplazamiento diario
+     (tarifa oficial estipulada, aproximadamente 0,19 €/km) o el importe del billete de autobús/tren.
+
+2. AYUDA DE MANUTENCIÓN:
+   - Se abona cuando la distancia entre el domicilio y el centro formador supera un número determinado
+     de kilómetros (habitualmente a partir de 20-50 km según CCAA) y la jornada lectiva se imparte
+     en sesiones de mañana y tarde con interrupción para el almuerzo.
+
+3. AYUDA DE ALOJAMIENTO Y MANUTENCIÓN COMPLETA:
+   - Aplicable cuando la distancia y los horarios de la red de transporte obligan al alumno a
+     pernoctar en la localidad donde se celebra la acción formativa.
+
+4. AYUDA A LA CONCILIACIÓN:
+   - Dirigida a personas desempleadas que deban conciliar la asistencia al curso con el cuidado
+     de hijos menores de 12 años o de familiares dependientes hasta el segundo grado de consanguinidad.
+   - Requisito: Que los ingresos de la unidad familiar no superen el 75% del IPREM per cápita.
+   - Cuantía: Fijada en torno al 75% del IPREM diario por cada día de asistencia efectiva a clase.
+
+5. BECA PARA PERSONAS CON DISCAPACIDAD:
+   - Beca específica diaria adicional por asistencia a clase para personas desempleadas inscritas
+     que tengan reconocido un grado de discapacidad igual o superior al 33%.
+
+
+================================================================================
+7. ACCESO A LAS OFERTAS DE EMPLEO DEL SECTOR PRIVADO: CÓMO SE SOLICITA UN EMPLEO
+================================================================================
+
+7.1. EL ROL DE LA OFICINA DE EMPLEO COMO INTERMEDIARIA LABORAL
+
+Una de las misiones capitales de las oficinas de empleo es la INTERMEDIACIÓN LABORAL.
+Las empresas del sector privado (desde pymes y autónomos hasta grandes corporaciones
+multinacionales) acuden a los Servicios Públicos de Empleo para cubrir sus puestos vacantes.
+¿Por qué acuden las empresas al servicio público de empleo?
+- Servicio de reclutamiento totalmente gratuito y profesionalizado.
+- Verificación oficial de las titulaciones y experiencia de los candidatos a través del SISPE.
+- Acceso directo a las bonificaciones a la Seguridad Social (contratos a jóvenes, mayores de 52,
+  discapacidad o parados de larga duración exigen que el candidato esté inscrito formalmente).
+
+7.2. CANAL 1: MATCHING AUTOMÁTICO Y SELECCIÓN TÉCNICA POR SONDEO (SISPE)
+
+Este canal funciona "de oficio", sin que el demandante tenga que buscar activamente la oferta:
+1. Publicación de la Oferta por la Empresa Privada:
+   - La empresa comunica la vacante al servicio de empleo indicando: puesto, funciones, requisitos
+     de titulación, años de experiencia, carnets, tipo de contrato, jornada y salario ofrecido.
+2. Sondeo en el Sistema SISPE:
+   - El algoritmo del servicio público cruza las exigencias del puesto con las bases de datos de todos
+     los demandantes de empleo inscritos en la comarca o provincia que tengan ese código CNO activo.
+   - Se genera una lista de candidatos idóneos por orden de antigüedad, perfil y situación de desempleo.
+3. Envío de Carta de Presentación o Convocatoria:
+   - El servicio de empleo envía un SMS, email o carta oficial convocando a los candidatos preseleccionados.
+   - En la citación se indica: datos de la empresa, puesto de trabajo, fecha, hora y lugar de la entrevista
+     de trabajo (que a menudo se realiza en las propias salas de selección de la oficina de empleo).
+4. OBLIGATORIEDAD LEGAL:
+   - Si el demandante de empleo NO percibe subsidios ni prestaciones, la asistencia es voluntaria.
+   - Si el demandante de empleo SÍ PERCIBE PRESTACIÓN O SUBSIDIO DEL SEPE, la comparecencia a la
+     selección es OBLIGATORIA. El rechazo injustificado de la entrevista o del empleo ofrecido se
+     considera infracción grave en virtud del "Compromiso de Actividad".
+
+7.3. CANAL 2: AUTOCANDIDATURA E INSCRIPCIÓN DIRECTA EN PORTALES PÚBLICOS
+
+Los demandantes pueden buscar y postularse activamente a diario a las ofertas del sector privado:
+1. Acceso a los Portales de Empleo:
+   - Cada Comunidad Autónoma tiene su portal de ofertas activas (ej. Punt LABORA en Valencia,
+     Cercador d'Ocupació en Cataluña, Oficina Virtual de Empleo de la CAM en Madrid, Portal de Empleo
+     del SAE en Andalucía, etc.) y a nivel nacional el portal Empléate (empleate.gob.es).
+2. Consulta de Ofertas:
+   - Las ofertas se publican con un código identificativo, descripción de tareas, salario según
+     convenio, ubicación del centro de trabajo y requisitos mínimos.
+3. Postulación / Inscripción:
+   - Al pulsar "Inscribirme en esta oferta", el portal exige identificarse con los datos de demandante.
+   - El sistema comprueba automáticamente si el perfil del usuario cumple los requisitos mínimos
+     exigidos por la empresa (titulación y experiencia). Si cumple los requisitos, la candidatura queda registrada.
+   - En muchos portales se puede adjuntar una carta de presentación específica y un CV ampliado en PDF.
+4. Fases del Proceso:
+   - El usuario puede seguir el estado de su candidatura en su panel de control:
+     "Inscrito" -> "Enviado a la empresa" -> "Seleccionado para entrevista" -> "Contratado" / "Descartado".
+
+7.4. EL COMPROMISO DE ACTIVIDAD Y LA "COLOCACIÓN ADECUADA"
+
+El Compromiso de Actividad es el acuerdo formal que firma todo solicitante de prestaciones con
+el servicio público de empleo, comprometiéndose a buscar activamente trabajo, participar en cursos
+y aceptar las ofertas de empleo adecuadas.
+
+¿QUÉ SE CONSIDERA LEGALMENTE UNA "COLOCACIÓN ADECUADA"?
+Para que una oferta de trabajo del sector privado sea legalmente obligatoria y no pueda ser
+rechazada sin sanción, la Ley de Empleo y la Ley General de la Seguridad Social exigen que cumpla
+tres requisitos indispensables:
+
+1. COHERENCIA PROFESIONAL:
+   - Debe corresponderse con la profesión habitual del demandante o con las ocupaciones solicitadas
+     en su demanda de empleo, o bien ajustarse a sus aptitudes formativas y profesionales demostrables.
+   - Transcurrido un año continuado de percepción de la prestación, también se considera adecuada
+     cualquier colocación que el servicio público entienda que la persona puede desempeñar, siempre
+     que no suponga un menoscabo grave de su dignidad.
+
+2. SALARIO Y CONDICIONES LABORALES:
+   - El salario ofrecido debe ser como mínimo el fijado en el Convenio Colectivo aplicable al sector
+     y categoría profesional, y en ningún caso inferior al Salario Mínimo Interprofesional (SMI).
+
+3. LOCALIZACIÓN GEOGRÁFICA Y DESPLAZAMIENTO:
+   - El puesto de trabajo debe radicar en la misma localidad o a una distancia que permita el regreso
+     diario al domicilio familiar.
+   - Criterio estándar legal: Salvo circunstancias especiales, no se considerará adecuado si el
+     desplazamiento diario de ida y vuelta en transporte público supera el 25% de la jornada laboral,
+     o si el coste del transporte supera el 20% del salario mensual obtenido.
+
+CONSECUENCIAS DEL RECHAZO INJUSTIFICADO:
+El rechazo no justificado de una colocación adecuada constituye una INFRACCIÓN GRAVE:
+- 1ª infracción: Pérdida de 3 meses de prestación.
+- 2ª infracción: Pérdida de 6 meses de prestación.
+- 3ª infracción: Extinción definitiva de la prestación por desempleo.
+
+
+================================================================================
+8. CATÁLOGO COMPLETO DE SERVICIOS ADICIONALES DE LAS OFICINAS DE EMPLEO
+================================================================================
+
+Las oficinas de empleo no son meras gestorías de sellado o ventanillas de subsidio; constituyen
+centros integrales de recursos para el empleo y el desarrollo profesional:
+
+8.1. SERVICIO DE ORIENTACIÓN LABORAL Y ASESORAMIENTO INDIVIDUAL
+
+Cualquier persona inscrita tiene derecho a solicitar cita con un Orientador Laboral profesional:
+- Diagnóstico individualizado de empleabilidad: Test de personalidad laboral y fortalezas.
+- Revisión y optimización del Currículum Vitae: Adaptación al formato europeo Europass,
+  estructuración cronológica vs. funcional, inclusión de palabras clave para cribado por IA.
+- Preparación y simulación de entrevistas de trabajo: Técnicas de entrevista individual y dinámica
+  de grupo, lenguaje no verbal, superación de pruebas psicotécnicas.
+- Búsqueda Activa de Empleo (BAE): Estrategias para encontrar empleo en el "mercado oculto"
+  (contactos, autocandidatura a empresas, redes profesionales como LinkedIn).
+
+8.2. PROCEDIMIENTO ACREDITA (ACREDITACIÓN DE COMPETENCIAS PROFESIONALES)
+
+Dirigido a trabajadores que han aprendido un oficio trabajando durante años pero no poseen un título
+oficial de Formación Profesional ni Certificado de Profesionalidad:
+- Es un procedimiento permanente y abierto en todas las Comunidades Autónomas.
+- Fases:
+  1. Asesoramiento: Un asesor oficial analiza el historial laboral y ayuda a recopilar contratos,
+     certificados de empresa y evidencias reales del trabajo desempeñado.
+  2. Evaluación: Un comité evaluador verifica las competencias mediante entrevistas técnicas
+     y pruebas prácticas de demostración del oficio.
+  3. Acreditación: Se emite una Acreditación Oficial con validez en toda España de las unidades
+     de competencia superadas. Esto permite convalidar asignaturas directas de un ciclo de FP
+     o solicitar la expedición directa de un Certificado de Profesionalidad.
+
+8.3. PROGRAMAS MIXTOS DE EMPLEO Y FORMACIÓN
+
+Iniciativas públicas que combinan formación teórica en un oficio con trabajo remunerado real
+en obras o servicios de utilidad pública o interés social:
+- Escuelas Taller: Dirigidas a jóvenes menores de 30 años desempleados.
+- Casas de Oficios: Cursos intensivos con contratación laboral.
+- Talleres de Empleo: Dirigidos a personas desempleadas mayores de 25 o 45 años.
+- Régimen retributivo: Los alumnos son contratados formalmente mediante el contrato de formación
+  en alternancia, percibiendo el Salario Mínimo Interprofesional correspondiente a las horas de trabajo.
+
+8.4. SISTEMA NACIONAL DE GARANTÍA JUVENIL
+
+Programa financiado por la Unión Europea para jóvenes entre 16 y 29 años (ambos incluidos) que no
+estén trabajando ni estudiando:
+- Inscripción gestionada en la oficina de empleo o en el portal estatal del Ministerio de Trabajo.
+- Ventajas para el joven: Acceso prioritario a cursos de alta especialización digital e idiomas,
+  contratación en programas de empleo juvenil de la administración pública y prácticas remuneradas.
+- Ventajas para las empresas: Fuertes reducciones y bonificaciones en las cuotas de la Seguridad
+  Social por contratar a jóvenes inscritos en Garantía Juvenil.
+
+8.5. ASESORAMIENTO PARA EL AUTOEMPLEO Y CREACIÓN DE EMPRESAS
+
+Para personas desempleadas que desean montar su propio negocio o hacerse autónomos:
+1. PAGO ÚNICO DE LA PRESTACIÓN POR DESEMPLEO (CAPITALIZACIÓN):
+   - El SEPE abona en un único pago el importe íntegro (100%) pendiente de cobrar de la prestación
+     contributiva para destinarlo a la inversión inicial del negocio (compra de maquinaria, locales,
+     vehículos comerciales, reformas, canon de franquicia) o para sufragar las cuotas mensuales
+     de cotización a la Seguridad Social en el RETA.
+2. COMPATIBILIZACIÓN DEL PARO CON EL TRABAJO AUTÓNOMO:
+   - Permite darse de alta como autónomo y seguir cobrando mensualmente la prestación por desempleo
+     durante un máximo de 270 días (9 meses), reduciendo el riesgo económico en la fase inicial del negocio.
+3. SUBVENCIONES AUTONÓMICAS AL AUTOEMPLEO:
+   - Ayudas a fondo perdido (que oscilan habitualmente entre 2.000 € y 10.000 € según comunidad)
+     para el establecimiento de personas desempleadas como trabajadoras autónomas, con importes
+     reforzados para mujeres, jóvenes menores de 30 años y mayores de 45 años.
+
+8.6. GESTIÓN DE OFERTAS DE EMPLEO PÚBLICO TEMPORAL Y PLANES LOCALES
+
+Las administraciones públicas utilizan las oficinas de empleo para cubrir puestos de personal laboral
+temporal y personal de oficios:
+- Planes de Empleo Local (Ayuntamientos y Diputaciones): Selección de peones de obras, jardineros,
+  auxiliares de ayuda a domicilio, peones de limpieza viaria y monitores socioculturales.
+  La preselección se realiza exclusivamente mediante sondeo entre las personas empadronadas e inscritas en la oficina.
+- Ofertas de Empleo Público en Ministerios y Organismos del Estado: Puestos de personal laboral fijo
+  discontinuo o temporal (guardas forestales, conductores de parques móviles, personal de mantenimiento).
+
+8.7. RED EURES (MOVILIDAD LABORAL EN EUROPA)
+
+Integrada en todas las oficinas públicas de empleo:
+- Conexión con los servicios públicos de empleo de los 27 Estados de la UE más Noruega, Islandia,
+  Liechtenstein y Suiza.
+- Ofertas de empleo remuneradas en el extranjero (sanitarios en Noruega, ingenieros en Alemania,
+  profesores en Francia, técnicos en los Países Bajos).
+- Ayudas económicas del programa "Tu primer trabajo EURES" / TMS (Targeted Mobility Scheme):
+  * Financiación del viaje para acudir a una entrevista presencial en el extranjero.
+  * Ayuda a fondo perdido para gastos de traslado y mudanza tras conseguir el contrato.
+  * Subvención para cursos del idioma del país de destino.
+
+8.8. PROGRAMAS PARA COLECTIVOS PRIORITARIOS Y VULNERABLES
+
+- Personas con Discapacidad (>= 33%): Asesoramiento por técnicos especializados, inserción en
+  Centros Especiales de Empleo (CEE), adaptación del puesto de trabajo y mediación laboral.
+- Parados de Larga Duración: Programas de acompañamiento intensivo y prioridad en la adjudicación
+  de cursos de cualificación profesional.
+- Mujeres Víctimas de Violencia de Género: Acceso preferente y confidencial a todos los servicios,
+  itinerarios individualizados sin listas de espera y tramitación de la Renta Activa de Inserción (RAI).
+
+
+================================================================================
+9. COORDINACIÓN FÍSICA Y GESTIÓN CON EL SEPE EN LA OFICINA COMPARTIDA
+================================================================================
+
+9.1. DISTRIBUCIÓN FÍSICA Y DIFERENCIACIÓN OPERATIVA
+
+En el día a día del ciudadano, entrar a una oficina de empleo implica dirigirse a dos
+administraciones distintas que operan coordinadas pero separadas:
+- Mostrador de Empleo Autonómico: Para todo lo relacionado con la búsqueda de trabajo, cursos,
+  acreditaciones y la tarjeta de demanda.
+- Mostrador del SEPE: Para todo lo relacionado con el dinero, cálculo de nóminas y subsidios.
+
+9.2. TRÁMITES EXCLUSIVOS DEL SEPE (PRESTACIONES Y SUBSIDIOS)
+
+Estos trámites NO los resuelve el servicio autonómico, sino el personal del SEPE:
+1. Prestación Contributiva por Desempleo:
+   - Exige haber cotizado un mínimo de 360 días en los últimos 6 años.
+   - Da derecho a entre 4 meses y 2 años de paro.
+2. Subsidio por Desempleo (Nivel Asistencial):
+   - Para quienes no alcanzan los 360 días de cotización (subsidio por insuficiencia de cotización).
+   - Para quienes han agotado la prestación contributiva y tienen cargas familiares.
+   - Subsidio para mayores de 52 años (cotiza para la jubilación hasta los 65 años).
+3. Suspensión de la prestación por trabajo temporal o salida al extranjero:
+   - Todo viaje al extranjero debe ser comunicado previamente al SEPE (se permiten hasta 15 días
+     naturales al año por motivos personales sin perder la prestación).
+4. Reclamaciones previas contra denegaciones de cobro y recursos administrativos.
+
+9.3. LA "REGLA DE ORO" PARA EL CIUDADANO EN CASO DE DESPIDO O FIN DE CONTRATO
+
+Existe un plazo legal estricto de 15 DÍAS HÁBILES (no cuentan sábados, domingos ni festivos)
+desde la fecha del despido o finalización del contrato laboral para tramitar las prestaciones
+ante el SEPE sin perder dinero.
+
+EL ORDEN EXACTO E INALTERABLE DE PASOS A SEGUIR ES:
+1. PASO 1 (EN EL SERVICIO AUTONÓMICO):
+   - Solicitar cita o entrar telemáticamente al Servicio Público de Empleo de su Comunidad Autónoma.
+   - DARSE DE ALTA o REACTIVAR LA DEMANDA DE EMPLEO (obtener el DARDE).
+   - *Nota esencial*: El sistema del SEPE no permite tramitar ninguna prestación económica si
+     el ciudadano no consta previamente en situación de ALTA como demandante en el servicio autonómico.
+
+2. PASO 2 (EN EL SEPE):
+   - Solicitar Cita Previa en el SEPE (sede.sepe.gob.es o teléfono oficial de cita previa 91 926 79 70).
+   - O bien presentar la presolicitud telemática en la sede electrónica del SEPE.
+   - La cita debe solicitarse dentro de los 15 días hábiles siguientes al cese en el trabajo.
+   - La empresa debe haber enviado previamente a través del sistema Certific@2 el "Certificado de Empresa".
+
+
+================================================================================
+10. GLOSARIO DE TÉRMINOS, SIGLAS Y RECOMENDACIONES CLAVE
+================================================================================
+
+GLOSARIO DE SIGLAS Y CONCEPTOS:
+- BAE: Búsqueda Activa de Empleo. Actividades acreditables (enviar CV, acudir a entrevistas,
+  hacer cursos) que demuestran que el parado intenta activamente trabajar.
+- CNO: Clasificación Nacional de Ocupaciones. Sistema de codificación numérica de todas
+  las profesiones existentes en el mercado de trabajo español.
+- DARDE: Documento de Alta y Renovación de la Demanda de Empleo. La acreditación oficial
+  de demandante con la fecha de sellado.
+- FPE: Formación Profesional para el Empleo. Cursos oficiales subvencionados para trabajadores
+  ocupados y desempleados.
+- Fundae: Fundación Estatal para la Formación en el Empleo.
+- IPREM: Indicador Público de Renta de Efectos Múltiples. Índice de referencia en España
+  para la concesión de subsidios, becas de formación y ayudas al estudio.
+- IPI: Itinerario Personalizado de Inserción. Plan de acción individual acordado entre el
+  demandante y su orientador público.
+- RETA: Régimen Especial de Trabajadores Autónomos de la Seguridad Social.
+- SEPE: Servicio Público de Empleo Estatal (antiguo INEM).
+- SISPE: Sistema de Información de los Servicios Públicos de Empleo (la base de datos
+  central que conecta al SEPE con las 17 Comunidades Autónomas).
+- TGSS: Tesorería General de la Seguridad Social.
+
+CONSEJOS FUNDAMENTALES PARA EL USUARIO:
+1. Conserve siempre el justificante PDF del DARDE cada vez que renueve la demanda. Es su único
+   amparo legal ante cualquier reclamación del SEPE.
+2. Si cambia de número de móvil o dirección de correo electrónico, actualícelo ese mismo día
+   en la web de empleo autonómica; una oferta de trabajo o curso urgente no atendido por teléfono
+   apagado puede derivar en la pérdida de la prestación.
+3. No deje el sellado de la demanda para la última hora del día fijado. Si experimenta incidencias
+   informáticas, capture pantalla con la hora y fecha visible como justificante técnico.
+4. Recuerde que el SEPE gestiona el dinero (prestaciones) y su Comunidad Autónoma gestiona
+   el trabajo, los cursos y la cartilla de demanda.
+================================================================================
+FIN DEL DOCUMENTO - INFO_OF_EMP_ESP_2026.txt
+================================================================================
