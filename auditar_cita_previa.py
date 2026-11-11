@@ -539,7 +539,8 @@ def generar_mensaje_soporte_sistema(info_sistema):
             "   previa permanente, necesitará llamar a atención al ciudadano para que le\n"
             "   generen una reserva de hueco, que deberá presentar en la oficina de empleo.\n"
             "   En ese caso, el cobro se produce por cada vez que se acceda a las oficinas\n"
-            "   de empleo.\n"
+            "   de empleo. El 012 es, por tanto, el canal telefónico de pago previsto para\n"
+            "   quienes sacan cita previa sin necesidad de acceder a Internet.\n"
             "\n"
             "⚠️  IMPORTANTE: WINDOWS 10 CON LICENCIA ESU NO ES PARA SIEMPRE.\n"
             "   • Caduca en octubre de 2028.\n"
@@ -564,8 +565,10 @@ def generar_mensaje_soporte_sistema(info_sistema):
             "\n"
             "✅ RECOMENDACIÓN: si se produce alguno de estos supuestos, instala Linux (en\n"
             "   arranque dual o en una máquina virtual si en algún momento necesitas\n"
-            "   Windows) para poder recuperar el acceso gratuito a las oficinas de empleo\n"
-            "   cuando el 012 sea un número de pago.\n"
+            "   Windows) para recuperar el ACCESO GRATUITO POR INTERNET a la cita previa\n"
+            "   de las oficinas de empleo que indican el número 012 como teléfono para\n"
+            "   sacar cita previa sin necesidad de acceder a Internet. Así evitas tener\n"
+            "   que llamar al 012, que según la ley española es un número corto de pago.\n"
             "=============================================================================="
         )
 
@@ -582,9 +585,11 @@ def generar_mensaje_soporte_sistema(info_sistema):
             "   certificados raíz, incompatibilidades, SMS de confirmación, etc.).\n"
             "\n"
             "✅ RECOMENDACIÓN: instala Linux (arranque dual o máquina virtual) para poder\n"
-            "   seguir accediendo de forma gratuita a las oficinas de empleo cuando el 012\n"
-            "   sea un número de pago. Las soluciones no oficiales de Internet (Legacy\n"
-            "   Update, Extended Kernel) pueden funcionar a medias o no funcionar.\n"
+            "   recuperar el acceso gratuito por Internet a la cita previa de las oficinas\n"
+            "   de empleo que indican el número 012 como teléfono para sacar cita previa\n"
+            "   sin necesidad de acceder a Internet, evitando así la llamada al 012, que\n"
+            "   es un número corto de pago. Las soluciones no oficiales de Internet\n"
+            "   (Legacy Update, Extended Kernel) pueden funcionar a medias o no funcionar.\n"
             "=============================================================================="
         )
 
@@ -974,7 +979,7 @@ Según el **BOE núm. 296, de 10 de diciembre de 2012**, todas las operadoras de
 
 **Aviso importante:** Windows 10 con licencia ESU **no es para siempre**. Caduca en **octubre de 2028**, el mismo día en que Microsoft finaliza el soporte de Microsoft Edge. A partir de entonces, con el paso del tiempo los navegadores pueden mostrar problemas de usabilidad, fallos en ciertos elementos de la página, que la parte de OpenStreetMap no funcione, errores de certificados raíz, errores de incompatibilidad con la página, que no se envíe correctamente el SMS de confirmación o cualquier otro error que impida manejar la página.
 
-Si la página falla y hablar con la oficina de empleo no surte efecto, el demandante de empleo puede perder el derecho a solicitar cita previa gratuita en las oficinas que usen el 012 y gestionen la cita previa y la atención por aforo. Las soluciones que se encuentran por Internet (Legacy Update, Extended Kernel) **no son oficiales de Microsoft**, están hechas por la comunidad y pueden funcionar a medias o no funcionar, especialmente el kernel extendido. En esos casos se recomienda instalar **Linux** (en arranque dual o en una máquina virtual si en algún momento se necesita Windows) para recuperar el acceso gratuito a las oficinas de empleo cuando el 012 sea un número de pago.
+Si la página falla y hablar con la oficina de empleo no surte efecto, el demandante de empleo puede perder el derecho a solicitar cita previa gratuita en las oficinas que usen el 012 y gestionen la cita previa y la atención por aforo. Las soluciones que se encuentran por Internet (Legacy Update, Extended Kernel) **no son oficiales de Microsoft**, están hechas por la comunidad y pueden funcionar a medias o no funcionar, especialmente el kernel extendido. En esos casos se recomienda instalar **Linux** (en arranque dual o en una máquina virtual si en algún momento se necesita Windows) para recuperar el **acceso gratuito por Internet a la cita previa** de las oficinas de empleo que indican el **012** como teléfono para sacar cita previa sin necesidad de acceder a Internet. Así se evita tener que llamar al 012, que según la ley española es un número corto de pago.
 
 ## Cita previa en la Comunidad de Madrid
 
@@ -1023,7 +1028,7 @@ Under **BOE no. 296 of 10 December 2012**, all Spanish telecommunications operat
 
 **Important notice:** Windows 10 with an ESU license **is not permanent**. It expires in **October 2028**, the same day Microsoft ends support for Microsoft Edge. After that, over time browsers may experience usability problems, broken page elements, OpenStreetMap failing, root certificate errors, page incompatibility errors, confirmation SMS failures, or any other error that prevents using the page.
 
-If the page fails and talking to the employment office does not help, the job seeker may lose the right to request a free appointment at offices that use the 012 number and manage appointments and attendance by capacity (aforo). Internet fixes such as Legacy Update or Extended Kernel **are not official Microsoft solutions**, are community-made, and may work only partially or not at all, especially the extended kernel. In those cases, installing **Linux** (dual boot or a virtual machine if Windows is still needed) is recommended to recover free access to employment offices when 012 is a paid number.
+If the page fails and talking to the employment office does not help, the job seeker may lose the right to request a free appointment at offices that use the 012 number and manage appointments and attendance by capacity (aforo). Internet fixes such as Legacy Update or Extended Kernel **are not official Microsoft solutions**, are community-made, and may work only partially or not at all, especially the extended kernel. In those cases, installing **Linux** (dual boot or a virtual machine if Windows is still needed) is recommended to recover **free Internet access to the appointment system** of employment offices that list the **012** as the phone number for getting an appointment without needing Internet access. This avoids having to call 012, which under Spanish law is a paid short number.
 
 ## Cita previa in the Community of Madrid
 
@@ -1084,7 +1089,7 @@ Si el auditor detecta Windows 10 con las ESU instaladas, te informará de que el
 
 Según el **BOE núm. 296, de 10 de diciembre de 2012**, las operadoras de telefonía españolas están obligadas a cobrar el 012 **por minutos** (tiempo de la gestión presencial o semipresencial) o **por cada acceso** a las oficinas de empleo. Si no tienes medios electrónicos o formación suficiente para usar la cita previa permanente, tendrás que llamar a atención al ciudadano para que te generen una reserva de hueco y presentarla en la oficina; el cobro se produce por cada acceso a las oficinas.
 
-**Windows 10 con ESU no es para siempre:** caduca en **octubre de 2028**, el mismo día en que Microsoft finaliza el soporte de Microsoft Edge. Después pueden aparecer problemas de usabilidad, elementos rotos, fallos de OpenStreetMap, errores de certificados raíz, incompatibilidades, fallos del SMS de confirmación o cualquier otro error que impida usar la página. Si la página falla y la oficina de empleo no puede ayudarte, puedes perder el derecho a la cita previa gratuita en las oficinas que usen el 012 y atiendan por aforo. Las soluciones de Internet (Legacy Update, Extended Kernel) no son oficiales de Microsoft y pueden funcionar a medias o no funcionar, sobre todo el kernel extendido. En ese caso, instala **Linux** (arranque dual o máquina virtual si necesitas Windows) para recuperar el acceso gratuito a las oficinas de empleo cuando el 012 sea un número de pago.
+**Windows 10 con ESU no es para siempre:** caduca en **octubre de 2028**, el mismo día en que Microsoft finaliza el soporte de Microsoft Edge. Después pueden aparecer problemas de usabilidad, elementos rotos, fallos de OpenStreetMap, errores de certificados raíz, incompatibilidades, fallos del SMS de confirmación o cualquier otro error que impida usar la página. Si la página falla y la oficina de empleo no puede ayudarte, puedes perder el derecho a la cita previa gratuita en las oficinas que usen el 012 y atiendan por aforo. Las soluciones de Internet (Legacy Update, Extended Kernel) no son oficiales de Microsoft y pueden funcionar a medias o no funcionar, sobre todo el kernel extendido. En ese caso, instala **Linux** (arranque dual o máquina virtual si necesitas Windows) para recuperar el **acceso gratuito por Internet a la cita previa** de las oficinas de empleo que indican el **012** como teléfono para sacar cita previa sin necesidad de acceder a Internet. Así evitas la llamada al 012, que según la ley española es un número corto de pago.
 
 ## Cómo interpretar el informe Markdown
 - **Estado técnico**: Cada fila de la tabla indica si el portal está operativo, si hay errores de CSP o si usa iframes/botones. Incluye ahora las 17 Comunidades Autónomas.
@@ -1141,7 +1146,7 @@ If the auditor detects Windows 10 with ESU installed, it will tell you that the 
 
 Under **BOE no. 296 of 10 December 2012**, Spanish telecommunications operators must charge for the 012 number **per minute** (duration of the in-person or semi-presential procedure) or **per access** to the employment offices. If you have no electronic means or insufficient training to use the permanent appointment system, you will need to call citizen attention to generate a slot reservation and present it at the office; the charge applies for each access to the offices.
 
-**Windows 10 with ESU is not permanent:** it expires in **October 2028**, the same day Microsoft ends support for Microsoft Edge. After that, usability problems, broken elements, OpenStreetMap failures, root certificate errors, incompatibilities, confirmation SMS failures, or any other error preventing use of the page may appear. If the page fails and the employment office cannot help, you may lose the right to a free appointment at offices that use the 012 number and manage attendance by capacity (aforo). Internet fixes (Legacy Update, Extended Kernel) are not official Microsoft solutions and may work only partially or not at all, especially the extended kernel. In that case, install **Linux** (dual boot or a virtual machine if you need Windows) to recover free access to employment offices when 012 is a paid number.
+**Windows 10 with ESU is not permanent:** it expires in **October 2028**, the same day Microsoft ends support for Microsoft Edge. After that, usability problems, broken elements, OpenStreetMap failures, root certificate errors, incompatibilities, confirmation SMS failures, or any other error preventing use of the page may appear. If the page fails and the employment office cannot help, you may lose the right to a free appointment at offices that use the 012 number and manage attendance by capacity (aforo). Internet fixes (Legacy Update, Extended Kernel) are not official Microsoft solutions and may work only partially or not at all, especially the extended kernel. In that case, install **Linux** (dual boot or a virtual machine if you need Windows) to recover **free Internet access to the appointment system** of employment offices that list the **012** as the phone number for getting an appointment without needing Internet access. This avoids calling 012, which under Spanish law is a paid short number.
 
 ## How to interpret the Markdown report
 - **Technical status**: Each row in the table indicates whether the portal is operational, if there are CSP errors, or if it uses iframes/buttons. Now includes all 17 Spanish Autonomous Communities.

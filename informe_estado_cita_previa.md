@@ -1,6 +1,6 @@
 # Informe de Auditoría: Estado de Cita Previa de Empleo (SEPE y CC. AA.)
 
-> **Auditoría generada automáticamente el:** 11/11/2026 a las 20:23:07 CEST
+> **Auditoría generada automáticamente el:** 11/11/2026 a las 20:38:29 CEST
 
 Este informe analiza el estado de las directivas de seguridad web del Servicio Público de Empleo Estatal (SEPE) y la compatibilidad con los portales autonómicos de cita previa de empleo.
 
